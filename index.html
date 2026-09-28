@@ -1,0 +1,925 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KU Design Job Leads</title>
+<meta name="description" content="A curated internship and job board for KU design students.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230049B8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16'/%3E%3Crect width='20' height='14' x='2' y='6' rx='2'/%3E%3C/svg%3E">
+<style id="styles">
+:root{
+  --bg:#FAFAFA;--fg:#262626;--card:#FFFFFF;--muted:#F0F2F5;--muted-fg:#666666;
+  --border:#E0E0E0;--primary:#0049B8;--primary-fg:#FFFFFF;--secondary:#0049B8;--secondary-fg:#FFFFFF;
+  --accent:#E6EFFF;--accent-fg:#0049B8;--destructive:#EF4444;--ring:#0049B8;--ku-gray:#333333;
+  --overlay:rgba(38,38,38,.6);
+  --b-gd-bg:#FFEDD5;--b-gd-fg:#9A3412;--b-gd-bd:#FED7AA;
+  --b-ux-bg:#DBEAFE;--b-ux-fg:#1E40AF;--b-ux-bd:#BFDBFE;
+  --b-green-bg:#D1FAE5;--b-green-fg:#065F46;--b-green-bd:#A7F3D0;
+  --b-amber-bg:#FEF3C7;--b-amber-fg:#92400E;--b-amber-bd:#FDE68A;
+  --b-rose-bg:#FFE4E6;--b-rose-fg:#9F1239;--b-rose-bd:#FECDD3;
+  --radius:.5rem;
+  --font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#121212;--fg:#F2F2F2;--card:#1A1A1A;--muted:#262626;--muted-fg:#A6A6A6;
+    --border:#333333;--primary:#005CE6;--secondary:#005CE6;--accent:#1A3366;--accent-fg:#99C2FF;
+    --destructive:#F87171;--ring:#3D86F5;--ku-gray:#1F1F1F;--overlay:rgba(0,0,0,.7);
+    --b-gd-bg:#3B2410;--b-gd-fg:#FDBA74;--b-gd-bd:#5C3515;
+    --b-ux-bg:#172A4D;--b-ux-fg:#93C5FD;--b-ux-bd:#1E3A6E;
+    --b-green-bg:#0F2F24;--b-green-fg:#6EE7B7;--b-green-bd:#14463A;
+    --b-amber-bg:#35270B;--b-amber-fg:#FCD34D;--b-amber-bd:#4D3910;
+    --b-rose-bg:#3A1520;--b-rose-fg:#FDA4AF;--b-rose-bd:#5A1E2D;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121212;--fg:#F2F2F2;--card:#1A1A1A;--muted:#262626;--muted-fg:#A6A6A6;
+  --border:#333333;--primary:#005CE6;--secondary:#005CE6;--accent:#1A3366;--accent-fg:#99C2FF;
+  --destructive:#F87171;--ring:#3D86F5;--ku-gray:#1F1F1F;--overlay:rgba(0,0,0,.7);
+  --b-gd-bg:#3B2410;--b-gd-fg:#FDBA74;--b-gd-bd:#5C3515;
+  --b-ux-bg:#172A4D;--b-ux-fg:#93C5FD;--b-ux-bd:#1E3A6E;
+  --b-green-bg:#0F2F24;--b-green-fg:#6EE7B7;--b-green-bd:#14463A;
+  --b-amber-bg:#35270B;--b-amber-fg:#FCD34D;--b-amber-bd:#4D3910;
+  --b-rose-bg:#3A1520;--b-rose-fg:#FDA4AF;--b-rose-bd:#5A1E2D;
+  color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*,*::before,*::after{box-sizing:border-box;border-color:var(--border)}
+body{margin:0;min-width:320px;min-height:100%;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font:inherit;color:inherit}
+a{color:inherit}
+.i{width:1rem;height:1rem;flex:none;display:inline-block;vertical-align:middle}
+.i-sm{width:.875rem;height:.875rem}.i-xs{width:.75rem;height:.75rem}.i-md{width:1.25rem;height:1.25rem}.i-lg{width:1.5rem;height:1.5rem}.i-xl{width:3rem;height:3rem}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+:focus-visible{outline:2px solid var(--ring);outline-offset:2px}
+
+#root{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh}
+.nav{border-bottom:1px solid var(--border);background:var(--card)}
+.nav-inner{max-width:80rem;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:.75rem 1rem}
+.brand{display:flex;align-items:center;gap:.5rem;font-size:1.25rem;font-weight:700;letter-spacing:-.025em;text-decoration:none}
+.brand .i{color:var(--primary)}
+
+.adminbar{background:var(--accent);color:var(--accent-fg);border-bottom:1px solid var(--border)}
+.adminbar-inner{max-width:80rem;margin:0 auto;padding:.5rem 1rem;display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .75rem;font-size:.875rem}
+.kbd-hint{font-size:.75rem;opacity:.75}
+.adminbar-note{display:flex;align-items:center;gap:.4rem;font-weight:500;margin-right:auto}
+
+main{width:100%;max-width:80rem;margin:0 auto;flex:1;padding:1.5rem 1rem 6rem}
+.stack>*+*{margin-top:1.5rem}
+.head{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:1rem}
+h1{font-size:1.875rem;line-height:2.25rem;font-weight:700;letter-spacing:-.025em;margin:0}
+.lede{color:var(--muted-fg);margin:0}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.25rem;white-space:nowrap;border-radius:calc(var(--radius) - 2px);font-size:.875rem;font-weight:500;height:2.25rem;padding:0 .75rem;border:1px solid transparent;background:transparent;cursor:pointer;text-decoration:none;transition:background-color .15s,color .15s,box-shadow .15s}
+.btn:disabled{opacity:.5;pointer-events:none}
+.btn-primary{background:var(--primary);color:var(--primary-fg)}
+.btn-primary:hover{background:color-mix(in srgb,var(--primary) 90%,transparent)}
+.btn-secondary{background:var(--secondary);color:var(--secondary-fg)}
+.btn-secondary:hover{background:color-mix(in srgb,var(--secondary) 90%,transparent)}
+.btn-ghost:hover{background:var(--accent);color:var(--accent-fg)}
+.btn-outline{border-color:var(--border);background:var(--bg)}
+.btn-outline:hover{background:var(--accent);color:var(--accent-fg)}
+.btn-danger{color:var(--destructive)}
+.btn-danger:hover{background:color-mix(in srgb,var(--destructive) 10%,transparent)}
+.btn-icon{height:1.75rem;padding:0 .5rem}
+.btn-block{width:100%}
+.seg{display:inline-flex;gap:.25rem;border:1px solid var(--border);border-radius:calc(var(--radius) - 2px);padding:.125rem;max-width:100%;overflow-x:auto;scrollbar-width:none}
+.seg::-webkit-scrollbar{display:none}
+.seg .btn{height:2rem}
+.seg .btn[aria-pressed="true"]{background:var(--primary);color:var(--primary-fg)}
+
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem}
+.vr{width:1px;height:1.5rem;background:var(--border)}
+.search{position:relative;flex:1 1 14rem;min-width:0}
+.search .i{position:absolute;left:.625rem;top:50%;transform:translateY(-50%);color:var(--muted-fg)}
+.input,.select,.textarea{width:100%;border:1px solid var(--border);background:var(--bg);border-radius:calc(var(--radius) - 2px);padding:.5rem .75rem;font-size:.875rem;min-height:2.5rem}
+.search .input{padding-left:2rem}
+.textarea{min-height:6rem;resize:vertical;line-height:1.5}
+.select{appearance:auto}
+.subbar{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem;font-size:.875rem;color:var(--muted-fg)}
+.subbar-label{font-weight:500}
+.count{margin-left:auto}
+@media (max-width:640px){.vr{display:none}.count{margin-left:0;width:100%}}
+
+.grid{display:grid;gap:1rem;grid-template-columns:1fr}
+@media (min-width:640px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1024px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.card{display:flex;flex-direction:column;border:1px solid var(--border);background:var(--card);border-radius:var(--radius);padding:1rem;box-shadow:0 1px 2px rgba(0,0,0,.05);cursor:pointer;transition:box-shadow .15s;min-width:0}
+.card:hover{box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1)}
+.card-top{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.deadline{margin-left:auto;display:flex;align-items:center;gap:.25rem;font-size:.75rem;color:var(--muted-fg)}
+.deadline.soon{color:var(--b-amber-fg);font-weight:600}
+.card-body{margin-top:.75rem;display:flex;flex:1;flex-direction:column;gap:.5rem}
+.card h3{font-size:1.125rem;line-height:1.25;font-weight:700;margin:0}
+.meta{display:flex;align-items:center;gap:.4rem;font-size:.875rem;color:var(--muted-fg);min-width:0}
+.meta b{font-weight:500}
+.meta span{overflow:hidden;text-overflow:ellipsis}
+.shared{display:flex;align-items:center;gap:.25rem;font-size:.75rem;color:var(--secondary)}
+.chips{display:flex;flex-wrap:wrap;gap:.375rem}
+.blurb{margin:.25rem 0 0;font-size:.875rem;color:var(--muted-fg);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card-foot{margin-top:1rem}
+.nolink{text-align:center;font-size:.75rem;color:var(--muted-fg);margin:0;padding:.5rem 0}
+.card-admin{display:flex;justify-content:flex-end;gap:.25rem;margin-top:.5rem;padding-top:.5rem;border-top:1px dashed var(--border)}
+
+.badge{display:inline-flex;align-items:center;gap:.25rem;border:1px solid var(--border);border-radius:9999px;padding:.125rem .625rem;font-size:.75rem;font-weight:500;line-height:1.25rem;white-space:nowrap}
+.b-gd{background:var(--b-gd-bg);color:var(--b-gd-fg);border-color:var(--b-gd-bd)}
+.b-ux{background:var(--b-ux-bg);color:var(--b-ux-fg);border-color:var(--b-ux-bd)}
+.b-intern{background:var(--secondary);color:var(--secondary-fg);border-color:transparent}
+.b-green{background:var(--b-green-bg);color:var(--b-green-fg);border-color:var(--b-green-bd)}
+.b-amber{background:var(--b-amber-bg);color:var(--b-amber-fg);border-color:var(--b-amber-bd)}
+.b-rose{background:var(--b-rose-bg);color:var(--b-rose-fg);border-color:var(--b-rose-bd)}
+.b-plain{background:transparent;color:var(--muted-fg)}
+.b-expired{background:var(--muted);color:var(--muted-fg)}
+
+.rows>*+*{margin-top:.5rem}
+.row{display:flex;align-items:center;gap:1rem;border:1px solid var(--border);background:var(--card);border-radius:var(--radius);padding:1rem;cursor:pointer;transition:background-color .15s;min-width:0}
+.row:hover{background:color-mix(in srgb,var(--accent) 40%,var(--card))}
+.row-logo{display:flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;border-radius:calc(var(--radius) - 2px);background:var(--muted);color:var(--muted-fg);flex:none}
+.row-main{min-width:0;flex:1}
+.row-title{display:flex;align-items:center;gap:.5rem;min-width:0}
+.row-title h3{font-size:1rem;font-weight:600;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row-sub{font-size:.875rem;color:var(--muted-fg);margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row-blurb{display:none;max-width:20rem;font-size:.875rem;color:var(--muted-fg);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0}
+@media (min-width:768px){.row-blurb{display:block}}
+.row-link{color:var(--secondary);display:inline-flex;padding:.25rem}
+.row-actions{display:flex;gap:.125rem}
+
+.empty{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:5rem 1rem;color:var(--muted-fg);text-align:center}
+.empty .i-xl{margin-bottom:.75rem}
+.empty p{margin:0}.empty .big{font-size:1.125rem;font-weight:500}.empty .small{font-size:.875rem}
+.empty .btn{margin-top:1rem}
+
+.pager{display:flex;align-items:center;justify-content:center;gap:.5rem;padding:1rem 0;flex-wrap:wrap}
+.pager .btn{height:2rem}
+.pager .btn[aria-current="page"]{background:var(--primary);color:var(--primary-fg);border-color:transparent}
+
+.fab{position:fixed;right:1.5rem;bottom:calc(1.5rem + env(safe-area-inset-bottom,0px));z-index:40;display:flex;align-items:center;justify-content:center;width:3.5rem;height:3.5rem;border-radius:9999px;background:var(--secondary);color:var(--secondary-fg);box-shadow:0 10px 15px -3px rgba(0,0,0,.2),0 4px 6px -4px rgba(0,0,0,.15);border:0;cursor:pointer;transition:transform .15s;text-decoration:none}
+.fab:hover{transform:scale(1.05)}.fab:active{transform:scale(.95)}
+
+footer{border-top:1px solid var(--border);background:var(--ku-gray);color:#A6A6A6}
+.foot-inner{max-width:80rem;margin:0 auto;padding:2.5rem 1rem}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:2rem}
+@media (min-width:640px){.foot-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1024px){.foot-grid{grid-template-columns:2fr 1fr 1fr}}
+.foot-brand{display:flex;align-items:center;gap:.5rem;color:#fff;font-weight:700;margin-bottom:.75rem}
+.foot-grid p{font-size:.875rem;margin:0;color:#BDBDBD;max-width:28rem}
+.foot-grid h4{margin:0 0 .75rem;font-size:.875rem;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:.05em}
+.foot-grid ul{list-style:none;margin:0;padding:0;font-size:.875rem}
+.foot-grid li+li{margin-top:.5rem}
+.foot-grid a{text-decoration:none;color:#BDBDBD;transition:color .15s}
+.foot-grid a:hover{color:#fff}
+.foot-copy{margin-top:2rem;border-top:1px solid rgba(166,166,166,.2);padding-top:1.5rem;text-align:center;font-size:.75rem;color:#8A8A8A}
+
+.overlay{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;background:var(--overlay);padding:1rem}
+.dialog{position:relative;display:flex;flex-direction:column;width:100%;max-width:42rem;max-height:85vh;max-height:85dvh;background:var(--card);border-radius:var(--radius);box-shadow:0 20px 25px -5px rgba(0,0,0,.25);animation:pop .16s ease-out}
+.dialog-sm{max-width:28rem}
+@keyframes pop{from{opacity:0;transform:translateY(6px) scale(.98)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.dialog{animation:none}.card,.row,.fab,.btn{transition:none}}
+.dialog-head{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);padding:1rem 1.5rem}
+.dialog-head h2{font-size:1.125rem;font-weight:700;margin:0}
+.x{border:0;background:transparent;border-radius:calc(var(--radius) - 2px);padding:.25rem;cursor:pointer;display:inline-flex}
+.x:hover{background:var(--muted)}
+.dialog-body{flex:1;overflow-y:auto;padding:1rem 1.5rem}
+.dialog-body>*+*{margin-top:1rem}
+.dialog-foot{display:flex;align-items:center;gap:.75rem;border-top:1px solid var(--border);padding:1rem 1.5rem;flex-wrap:wrap}
+.dialog-foot .right{margin-left:auto;display:flex;gap:.5rem;flex-wrap:wrap}
+.lbl{display:block;font-size:.75rem;font-weight:500;text-transform:uppercase;letter-spacing:.05em;color:var(--muted-fg)}
+.d-title{font-size:1.25rem;font-weight:700;margin:0}
+.d-row{display:flex;flex-wrap:wrap;gap:1rem 2rem}
+.d-row p,.dialog-body p{margin:0}
+.d-val{display:flex;align-items:center;gap:.25rem}
+.d-val .i{color:var(--muted-fg)}
+.d-summary{font-size:.875rem}
+
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:.25rem;background:var(--muted);border-radius:calc(var(--radius) - 2px);padding:.25rem}
+.tab{border:0;background:transparent;border-radius:calc(var(--radius) - 4px);padding:.375rem .75rem;font-size:.875rem;font-weight:500;color:var(--muted-fg);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:.375rem}
+.tab[aria-selected="true"]{background:var(--card);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.drop{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.375rem;border:2px dashed var(--border);border-radius:var(--radius);padding:1.5rem 1rem;text-align:center;color:var(--muted-fg);cursor:pointer;font-size:.875rem;transition:border-color .15s,background-color .15s}
+.drop:hover,.drop.over{border-color:var(--secondary);background:var(--accent);color:var(--accent-fg)}
+.drop b{color:var(--fg);font-weight:600}
+.file-pill{display:flex;align-items:center;gap:.5rem;border:1px solid var(--border);border-radius:calc(var(--radius) - 2px);padding:.5rem .75rem;font-size:.875rem}
+.file-pill span{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.or{display:flex;align-items:center;gap:.75rem;font-size:.75rem;color:var(--muted-fg)}
+.or::before,.or::after{content:"";flex:1;height:1px;background:var(--border)}
+.note{display:flex;gap:.5rem;align-items:flex-start;border-radius:calc(var(--radius) - 2px);padding:.625rem .75rem;font-size:.875rem;background:var(--accent);color:var(--accent-fg)}
+.note.warn{background:var(--b-amber-bg);color:var(--b-amber-fg)}
+.note.err{background:var(--b-rose-bg);color:var(--b-rose-fg)}
+.note .i{margin-top:.2rem}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:.875rem 1rem}
+.form .full{grid-column:1/-1}
+@media (max-width:560px){.form{grid-template-columns:1fr}}
+.field label{display:block;font-size:.875rem;font-weight:500;margin-bottom:.375rem}
+.field .hint{font-size:.75rem;color:var(--muted-fg);margin-top:.25rem}
+.req{color:var(--primary)}
+.checks{display:flex;flex-wrap:wrap;gap:.5rem}
+.check{display:inline-flex;align-items:center;gap:.375rem;border:1px solid var(--border);border-radius:9999px;padding:.25rem .75rem;font-size:.875rem;cursor:pointer;user-select:none}
+.check input{accent-color:var(--secondary);margin:0 .125rem 0 0}
+.check:has(input:checked){border-color:var(--secondary);background:var(--accent);color:var(--accent-fg)}
+.inline{display:flex;gap:.75rem;align-items:center}
+.inline .input{flex:1}
+.thinking{display:flex;align-items:center;gap:.5rem;font-size:.875rem;color:var(--muted-fg)}
+.spin{animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.toasts{position:fixed;left:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:60;display:flex;flex-direction:column;gap:.5rem;max-width:min(24rem,calc(100vw - 6rem))}
+.toast{background:var(--fg);color:var(--bg);border-radius:var(--radius);padding:.75rem 1rem;font-size:.875rem;box-shadow:0 10px 15px -3px rgba(0,0,0,.2)}
+.toast b{display:block}
+.busy{position:fixed;inset:0;z-index:70;display:flex;align-items:center;justify-content:center;background:var(--overlay);color:#fff;gap:.5rem;font-weight:500}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="application/json" id="board-data">{"settings": {"suggestEmail": ""}, "listings": [{"id": "s01", "role_title": "Product Designer Intern", "company": "Garmin", "parent_company": "", "location": "Olathe, KS", "work_mode": "On-site", "category": "UI/UX Design", "job_type": "Internship", "term": "", "pay": "", "class_years": ["Sophomore", "Junior", "Senior"], "summary": "Research, wireframe, and prototype interfaces for Garmin products alongside UX designers, engineers, and product managers, including running usability tests on new designs. Full-time and on-site at Garmin's Olathe headquarters; requires a 3.0+ GPA (3.5 preferred), with Figma and Adobe skills a plus.", "link_url": "https://careers.garmin.com/jobs/20190?lang=en-us", "apply_email": "", "deadline": "Rolling", "alumni_name": "", "created_at": "2026-09-28T19:00:00.000Z", "updated_at": "2026-09-28T18:58:00.000Z"}, {"id": "s02", "role_title": "Creative Intern, eGreetings", "company": "Hallmark", "parent_company": "", "location": "Kansas City, MO", "work_mode": "Hybrid", "category": "Graphic Design", "job_type": "Internship", "term": "Summer 2027 (12 weeks, late May–early Aug)", "pay": "", "class_years": ["Sophomore", "Junior"], "summary": "Research digital trends and develop concepts, storyboards, and visuals for animated, interactive, and video greetings that reach younger Hallmark customers, then present them to creative and business leaders. For students graduating between December 2027 and May 2030; a portfolio is encouraged but not required, and housing help is available for students from outside the KC area.", "link_url": "https://recruiting2.ultipro.com/HAL1009HLLI/JobBoard/ab752bd2-ff61-4489-a86c-18d808fa6f00/OpportunityDetail?opportunityId=ad859311-ae60-4c76-b2d6-accd2ecb6e00", "apply_email": "", "deadline": "Rolling", "alumni_name": "", "created_at": "2026-09-28T18:59:00.000Z", "updated_at": "2026-09-28T18:58:24.000Z"}, {"id": "s06", "role_title": "Digital UX Design Intern", "company": "Milwaukee Tool", "parent_company": "TTI", "location": "Brookfield, WI", "work_mode": "", "category": "UI/UX Design", "job_type": "Internship", "term": "Summer 2027 (11 weeks)", "pay": "", "class_years": ["Sophomore", "Junior", "Senior"], "summary": "Design layouts, flows, wireframes, and prototypes for Milwaukee Tool's apps and connected hardware across iOS, Android, and web, and test them with real users. Paid 11-week internship with summer housing support; open to students currently in a UX design program with a portfolio.", "link_url": "https://tti.yello.co/external/requisitions/AxT3ixX0Y6XY_EqDxMZ2_Q", "apply_email": "", "deadline": "Rolling", "alumni_name": "", "created_at": "2026-09-28T18:55:00.000Z", "updated_at": "2026-09-28T18:52:40.000Z"}, {"id": "s07", "role_title": "Design Researcher Intern", "company": "Milwaukee Tool", "parent_company": "TTI", "location": "Brookfield, WI", "work_mode": "", "category": "UI/UX Design", "job_type": "Internship", "term": "Summer 2027 (11 weeks)", "pay": "", "class_years": ["Sophomore", "Junior", "Senior"], "summary": "Plan and run your own field research project at Milwaukee Tool, interviewing and observing users and turning the findings into insights for product teams. Paid 11-week internship with housing support; graphic and industrial design majors are welcome, and a resume and cover letter are required.", "link_url": "https://tti.yello.co/external/requisitions/El5jv1-bGG07TZ3dKEbM9g", "apply_email": "", "deadline": "Rolling", "alumni_name": "", "created_at": "2026-09-28T18:54:00.000Z", "updated_at": "2026-09-28T18:52:40.000Z"}, {"id": "s08", "role_title": "UX Design Internship", "company": "Target", "parent_company": "", "location": "Minneapolis, MN", "work_mode": "Hybrid", "category": "UI/UX Design", "job_type": "Internship", "term": "Summer 2027 (10 weeks)", "pay": "$34/hr", "class_years": ["Sophomore", "Junior", "Senior"], "summary": "Design guest and team member experiences in Target's 10-week UX internship, from research and ideation to prototypes, with mentorship from UX leads. Open to current students in a 4-year degree with interaction, visual, or information design skills.", "link_url": "https://corporate.target.com/jobs/w10/77/ux-design-internship-minneapolis,-mn-starting-summer,-2027", "apply_email": "", "deadline": "Rolling", "alumni_name": "", "created_at": "2026-09-28T18:53:00.000Z", "updated_at": "2026-09-28T18:52:40.000Z"}, {"id": "s09", "role_title": "Brand Design Intern", "company": "Figma", "parent_company": "", "location": "San Francisco, CA", "work_mode": "On-site", "category": "Graphic Design", "job_type": "Internship", "term": "Summer 2027 (starts June)", "pay": "$29/hr", "class_years": ["Sophomore", "Junior", "Senior"], "summary": "Create campaign, launch, and brand storytelling work inside Figma's Brand Studio, exploring image-making, typography, and visual systems with senior designers. Applications close October 2 at 5pm PT; a portfolio is required, and Figma provides a housing stipend and travel reimbursement.", "link_url": "https://job-boards.greenhouse.io/figma/jobs/6144755004?gh_jid=6144755004", "apply_email": "", "deadline": "2026-10-02", "alumni_name": "", "created_at": "2026-09-28T18:52:00.000Z", "updated_at": "2026-09-28T18:52:40.000Z"}, {"id": "s10", "role_title": "Product Design Intern", "company": "Figma", "parent_company": "", "location": "San Francisco, CA or New York, NY", "work_mode": "Hybrid", "category": "UI/UX Design", "job_type": "Internship", "term": "Summer 2027", "pay": "$46/hr", "class_years": [], "summary": "Own features at Figma from ideation to shipped work, creating flows, prototypes, and high-fidelity visuals alongside a mentor and engineers. Portfolio-driven and competitive; Figma provides a housing stipend and travel reimbursement.", "link_url": "https://job-boards.greenhouse.io/figma/jobs/6180005004?gh_jid=6180005004", "apply_email": "", "deadline": "Rolling", "alumni_name": "", "created_at": "2026-09-28T18:51:00.000Z", "updated_at": "2026-09-28T18:52:40.000Z"}, {"id": "s11", "role_title": "User Experience Design Intern (BS/MS)", "company": "Google", "parent_company": "", "location": "Mountain View, CA + 30 other US offices", "work_mode": "", "category": "UI/UX Design", "job_type": "Internship", "term": "Summer 2027 (12 weeks)", "pay": "$88K–117K/yr, prorated", "class_years": ["Junior"], "summary": "Define user models and interfaces for Google products through storyboards, mockups, and prototypes with PMs, engineers, and researchers. Aimed at students in their second-to-last year (juniors for most KU students); apply by October 9 with a portfolio, resume, and transcript.", "link_url": "https://www.google.com/about/careers/applications/jobs/results/100798001798095558-user-experience-design-intern-bsms-summer-2027", "apply_email": "", "deadline": "2026-10-09", "alumni_name": "", "created_at": "2026-09-28T18:50:00.000Z", "updated_at": "2026-09-28T18:52:40.000Z"}, {"id": "s12", "role_title": "UX Design Intern", "company": "Hy-Vee", "parent_company": "", "location": "Grimes, IA", "work_mode": "On-site", "category": "UI/UX Design", "job_type": "Internship", "term": "Summer 2027", "pay": "", "class_years": [], "summary": "Support Hy-Vee's corporate UX team as a paid intern reporting to the Senior UX Manager, with flexible hours at the Grimes, Iowa office. A close-to-home Midwest option for building UX experience.", "link_url": "https://hyvee.wd1.myworkdayjobs.com/en-US/HyVeeCareers/job/UX-Design-Intern---Summer-2027_R250150", "apply_email": "", "deadline": "Rolling", "alumni_name": "", "created_at": "2026-09-28T18:49:00.000Z", "updated_at": "2026-09-28T18:52:40.000Z"}, {"id": "s16", "role_title": "Design Visual Communication Intern, Product Design Office", "company": "Stellantis", "parent_company": "", "location": "Auburn Hills, MI", "work_mode": "On-site", "category": "Graphic Design", "job_type": "Internship", "term": "Summer 2027 (May–Aug)", "pay": "", "class_years": ["Sophomore", "Junior", "Senior"], "summary": "Build narrative visual stories around future vehicle concepts in Stellantis's Product Design Office, using storyboards, renderings, animation, and tools like Blender, Unreal Engine, and Vizcom. Open to students who have finished freshman year; requires a PDF portfolio, and relocation assistance may be available.", "link_url": "https://careers.stellantis.com/job/23787236/2027-product-design-office-pdo-design-visual-communication-internship/?source=Career_website", "apply_email": "", "deadline": "Rolling", "alumni_name": "", "created_at": "2026-09-28T18:45:00.000Z", "updated_at": "2026-09-28T18:52:40.000Z"}, {"id": "s17", "role_title": "Digital and Animation Design Intern, Product Design Office", "company": "Stellantis", "parent_company": "", "location": "Auburn Hills, MI", "work_mode": "On-site", "category": "Graphic Design", "job_type": "Internship", "term": "Summer 2027 (May–Aug)", "pay": "", "class_years": ["Sophomore", "Junior", "Senior"], "summary": "Create visualization files, imagery, and animations for vehicle design projects using tools like VRED, Unreal Engine, Maya, and After Effects. Open to visual communication, graphic, UX, and animation students who have finished freshman year; requires a PDF portfolio.", "link_url": "https://careers.stellantis.com/job/23787239/2027-product-design-office-pdo-digital-and-animation-design-internship/?source=Career_website", "apply_email": "", "deadline": "Rolling", "alumni_name": "", "created_at": "2026-09-28T18:44:00.000Z", "updated_at": "2026-09-28T18:52:40.000Z"}, {"id": "s20", "role_title": "Product Design Intern", "company": "Intuit", "parent_company": "", "location": "Mountain View, CA", "work_mode": "Hybrid", "category": "UI/UX Design", "job_type": "Internship", "term": "Summer 2027 (12 weeks)", "pay": "$32.41–70.70/hr", "class_years": ["Sophomore", "Junior", "Senior"], "summary": "Create UI components, wireframes, and interactive prototypes for Intuit products using its design systems and AI tools, partnering with senior designers. Open to students graduating after the internship; relocation stipend provided and an online portfolio required.", "link_url": "https://jobs.intuit.com/job/mountain-view/summer-2027-product-design-intern/27595/100620927648", "apply_email": "", "deadline": "Rolling", "alumni_name": "", "created_at": "2026-09-28T18:41:00.000Z", "updated_at": "2026-09-28T18:52:40.000Z"}, {"id": "s21", "role_title": "Product Design Intern", "company": "DoorDash", "parent_company": "", "location": "San Francisco, CA or New York, NY", "work_mode": "On-site", "category": "UI/UX Design", "job_type": "Internship", "term": "Summer 2027 (12 weeks)", "pay": "$105K–155K/yr base, prorated", "class_years": ["Junior"], "summary": "Take a real DoorDash project from early exploration to shipped work, using Figma and AI tools to prototype and test. For students graduating Fall 2027 or Spring/Summer 2028; your portfolio needs at least one case study showing how you used AI.", "link_url": "https://careersatdoordash.com/jobs/product-design-intern-summer-2027/8176863/", "apply_email": "", "deadline": "Rolling", "alumni_name": "", "created_at": "2026-09-28T18:40:00.000Z", "updated_at": "2026-09-28T18:52:40.000Z"}, {"id": "s24", "role_title": "Product Design Intern, Summer 2027", "company": "TikTok", "parent_company": "", "location": "San Jose, CA", "work_mode": "", "category": "UI/UX Design", "job_type": "Internship", "term": "Summer 2027", "pay": "$30/hr", "class_years": ["Sophomore", "Junior", "Senior"], "summary": "Design product features for TikTok's short video, live, and local services experiences, building high-fidelity prototypes with AI-assisted coding tools. Open to current design or HCI students; housing allowance may be available.", "link_url": "https://lifeattiktok.com/search/7667855239770736901", "apply_email": "", "deadline": "Rolling", "alumni_name": "", "created_at": "2026-09-28T18:37:00.000Z", "updated_at": "2026-09-28T18:52:40.000Z"}, {"id": "s25", "role_title": "Creative Design Intern, Summer 2027", "company": "TikTok", "parent_company": "", "location": "Los Angeles, CA", "work_mode": "", "category": "Graphic Design", "job_type": "Internship", "term": "Summer 2027", "pay": "$28.50/hr", "class_years": ["Sophomore", "Junior", "Senior"], "summary": "Design visuals and product experiences for TikTok, working with product and engineering and using AI tools to speed up design work. Open to current design or HCI students; housing allowance may be available.", "link_url": "https://lifeattiktok.com/search/7667858055000606981", "apply_email": "", "deadline": "Rolling", "alumni_name": "", "created_at": "2026-09-28T18:36:00.000Z", "updated_at": "2026-09-28T18:52:40.000Z"}, {"id": "s26", "role_title": "Product Designer Project Intern (UX), 2026 Start", "company": "TikTok", "parent_company": "", "location": "San Jose, CA", "work_mode": "", "category": "UI/UX Design", "job_type": "Internship", "term": "2026 start (5+ months)", "pay": "$30/hr", "class_years": ["Sophomore", "Junior", "Senior"], "summary": "Design user experiences for TikTok's short-form video products, taking early ideas through research, prototyping, and iteration with product managers and engineers. Requires a 5-month commitment, a Figma-based portfolio showing end-to-end design, and current enrollment in a design or HCI program; housing allowance may be available.", "link_url": "https://lifeattiktok.com/search/7533145462880127240", "apply_email": "", "deadline": "Rolling", "alumni_name": "", "created_at": "2026-09-28T18:35:00.000Z", "updated_at": "2026-09-28T18:46:29.000Z"}, {"id": "17697f41-a744-44ff-87af-4b0dc4271cfd", "role_title": "Product Design Intern", "company": "Atlassian", "parent_company": "", "location": "San Francisco, CA", "work_mode": "Hybrid", "category": "UI/UX Design", "job_type": "Internship", "term": "Summer 2027", "pay": "$41–56/hr", "class_years": ["Sophomore", "Junior"], "summary": "This 12-week paid internship has you working alongside product managers, engineers, and senior designers at Atlassian to design accessible product experiences and explore AI-driven interaction models across tools like Jira and Confluence. It suits current undergrad or master's students who must return to school afterward, graduating by June 2028, and are not international students needing sponsorship.", "link_url": "https://careers-americas.icims.com/jobs/26273/product-design-intern,-2027-summer-u.s./job?iis=LinkedIn&iisn=LinkedIn_Job_Ad&mobile=false&width=1566&height=500&bga=true&needsRedirect=false&jan1offset=-360&jun1offset=-300", "apply_email": "", "deadline": "Rolling", "alumni_name": "", "created_at": "2026-09-28T18:55:43.734Z", "updated_at": "2026-09-28T18:55:43.734Z"}, {"id": "da6a4b9e-f30d-4bee-bde1-aadd15cf244c", "role_title": "User Experience Design Intern", "company": "IBM", "parent_company": "", "location": "Austin, TX", "work_mode": "Hybrid", "category": "UI/UX Design", "job_type": "Internship", "term": "2027", "pay": "$75,600–138,600/yr", "class_years": ["Sophomore", "Junior", "Senior"], "summary": "This internship has you working alongside IBM's design team on wireframes, prototypes, and user research for enterprise products, including exploring AI-powered design tools. It's a great fit for students studying UX, HCI, product or graphic design, or related fields who want hands-on experience in a large, collaborative tech company setting.", "link_url": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=130907&src=SN_LinkedIn", "apply_email": "", "deadline": "Rolling", "alumni_name": "", "created_at": "2026-09-28T18:56:11.416Z", "updated_at": "2026-09-28T18:56:11.416Z"}]}</script>
+<script id="app">
+(function () {
+  "use strict";
+  var ICONS = {"briefcase": "<path d=\"M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16\" /> <rect width=\"20\" height=\"14\" x=\"2\" y=\"6\" rx=\"2\" />", "graduation-cap": "<path d=\"M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z\" /> <path d=\"M22 10v6\" /> <path d=\"M6 12.5V16a6 3 0 0 0 12 0v-3.5\" />", "search": "<circle cx=\"11\" cy=\"11\" r=\"8\" /> <path d=\"m21 21-4.3-4.3\" />", "layout-grid": "<rect width=\"7\" height=\"7\" x=\"3\" y=\"3\" rx=\"1\" /> <rect width=\"7\" height=\"7\" x=\"14\" y=\"3\" rx=\"1\" /> <rect width=\"7\" height=\"7\" x=\"14\" y=\"14\" rx=\"1\" /> <rect width=\"7\" height=\"7\" x=\"3\" y=\"14\" rx=\"1\" />", "list": "<path d=\"M3 12h.01\" /> <path d=\"M3 18h.01\" /> <path d=\"M3 6h.01\" /> <path d=\"M8 12h13\" /> <path d=\"M8 18h13\" /> <path d=\"M8 6h13\" />", "map-pin": "<path d=\"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0\" /> <circle cx=\"12\" cy=\"10\" r=\"3\" />", "building-2": "<path d=\"M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z\" /> <path d=\"M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2\" /> <path d=\"M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2\" /> <path d=\"M10 6h4\" /> <path d=\"M10 10h4\" /> <path d=\"M10 14h4\" /> <path d=\"M10 18h4\" />", "calendar": "<path d=\"M8 2v4\" /> <path d=\"M16 2v4\" /> <rect width=\"18\" height=\"18\" x=\"3\" y=\"4\" rx=\"2\" /> <path d=\"M3 10h18\" />", "user": "<path d=\"M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\" /> <circle cx=\"12\" cy=\"7\" r=\"4\" />", "external-link": "<path d=\"M15 3h6v6\" /> <path d=\"M10 14 21 3\" /> <path d=\"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6\" />", "mail": "<rect width=\"20\" height=\"16\" x=\"2\" y=\"4\" rx=\"2\" /> <path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\" />", "plus": "<path d=\"M5 12h14\" /> <path d=\"M12 5v14\" />", "x": "<path d=\"M18 6 6 18\" /> <path d=\"m6 6 12 12\" />", "pencil": "<path d=\"M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z\" /> <path d=\"m15 5 4 4\" />", "trash-2": "<path d=\"M3 6h18\" /> <path d=\"M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6\" /> <path d=\"M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2\" /> <line x1=\"10\" x2=\"10\" y1=\"11\" y2=\"17\" /> <line x1=\"14\" x2=\"14\" y1=\"11\" y2=\"17\" />", "loader-circle": "<path d=\"M21 12a9 9 0 1 1-6.219-8.56\" />", "upload": "<path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\" /> <polyline points=\"17 8 12 3 7 8\" /> <line x1=\"12\" x2=\"12\" y1=\"3\" y2=\"15\" />", "sparkles": "<path d=\"M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z\" /> <path d=\"M20 3v4\" /> <path d=\"M22 5h-4\" /> <path d=\"M4 17v2\" /> <path d=\"M5 18H3\" />", "download": "<path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\" /> <polyline points=\"7 10 12 15 17 10\" /> <line x1=\"12\" x2=\"12\" y1=\"15\" y2=\"3\" />", "clock": "<circle cx=\"12\" cy=\"12\" r=\"10\" /> <polyline points=\"12 6 12 12 16 14\" />", "dollar-sign": "<line x1=\"12\" x2=\"12\" y1=\"2\" y2=\"22\" /> <path d=\"M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6\" />", "sun": "<circle cx=\"12\" cy=\"12\" r=\"4\" /> <path d=\"M12 2v2\" /> <path d=\"M12 20v2\" /> <path d=\"m4.93 4.93 1.41 1.41\" /> <path d=\"m17.66 17.66 1.41 1.41\" /> <path d=\"M2 12h2\" /> <path d=\"M20 12h2\" /> <path d=\"m6.34 17.66-1.41 1.41\" /> <path d=\"m19.07 4.93-1.41 1.41\" />", "settings": "<path d=\"M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z\" /> <circle cx=\"12\" cy=\"12\" r=\"3\" />", "laptop": "<path d=\"M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16\" />", "check": "<path d=\"M20 6 9 17l-5-5\" />", "file-text": "<path d=\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\" /> <path d=\"M14 2v4a2 2 0 0 0 2 2h4\" /> <path d=\"M10 9H8\" /> <path d=\"M16 13H8\" /> <path d=\"M16 17H8\" />"};
+  var HEAD = '<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n<title>KU Design Job Leads</title>\n<meta name="description" content="A curated internship and job board for KU design students.">\n';
+  var PDFJS = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js";
+  var PDFJS_WORKER = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+  var CATEGORIES = ["Graphic Design", "UI/UX Design"];
+  var JOB_TYPES = ["Internship", "Full-Time", "Part-Time", "Freelance"];
+  var CLASS_YEARS = ["Sophomore", "Junior", "Senior"];
+  var MODES = ["On-site", "Hybrid", "Remote"];
+  var PAGE_SIZE = 12;
+
+  // ---------- helpers ----------
+  function icon(n, cls) { return '<svg class="i ' + (cls || "") + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (ICONS[n] || "") + "</svg>"; }
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function safeUrl(u) { if (!u) return ""; try { var x = new URL(String(u).trim()); return (x.protocol === "http:" || x.protocol === "https:") ? x.href : ""; } catch (e) { return ""; } }
+  function safeEmail(e) { e = String(e || "").trim(); return /^[^\s@<>"']+@[^\s@<>"']+\.[^\s@<>"']+$/.test(e) ? e : ""; }
+  function uid() { try { return crypto.randomUUID(); } catch (e) { return "id-" + Date.now().toString(36) + Math.random().toString(36).slice(2, 8); } }
+  function todayStart() { var d = new Date(); d.setHours(0, 0, 0, 0); return d; }
+  function todayISO() { var d = new Date(); return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); }
+  function parseDeadline(s) {
+    if (!s || s === "Rolling") return null;
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s);
+    var d = m ? new Date(+m[1], +m[2] - 1, +m[3]) : new Date(s);
+    return isNaN(d.getTime()) ? null : d;
+  }
+  function isExpired(l) { var d = parseDeadline(l.deadline); return !!d && d < todayStart(); }
+  function daysLeft(l) { var d = parseDeadline(l.deadline); return d ? Math.round((d - todayStart()) / 864e5) : null; }
+  function fmtDate(s, short) {
+    var d = parseDeadline(s); if (!d) return s || "Rolling";
+    return d.toLocaleDateString("en-US", short ? { month: "short", day: "numeric", year: "numeric" } : { month: "long", day: "numeric", year: "numeric" });
+  }
+  function fmtPosted(iso) { var d = new Date(iso); return isNaN(d.getTime()) ? "" : d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" }); }
+  function plural(y) { return y === "Sophomore" ? "Sophomores" : y + "s"; }
+  function yearsText(ys) { ys = CLASS_YEARS.filter(function (y) { return (ys || []).indexOf(y) > -1; }); return ys.map(plural).join(", "); }
+  function ss(k, v) { try { if (v === undefined) return sessionStorage.getItem(k); if (v === null) sessionStorage.removeItem(k); else sessionStorage.setItem(k, v); } catch (e) { return null; } }
+
+  function normalize(l) {
+    var o = l || {};
+    var pick = function (v, list, dflt) { return list.indexOf(v) > -1 ? v : dflt; };
+    var dl = String(o.deadline || "").trim();
+    if (dl !== "Rolling" && !/^\d{4}-\d{2}-\d{2}$/.test(dl)) { var pd = parseDeadline(dl); dl = pd ? pd.getFullYear() + "-" + String(pd.getMonth() + 1).padStart(2, "0") + "-" + String(pd.getDate()).padStart(2, "0") : "Rolling"; }
+    return {
+      id: o.id || uid(),
+      role_title: String(o.role_title || "").trim(),
+      company: String(o.company || "").trim(),
+      parent_company: o.parent_company ? String(o.parent_company).trim() : "",
+      location: String(o.location || "").trim(),
+      work_mode: pick(o.work_mode, MODES, ""),
+      category: pick(o.category, CATEGORIES, "UI/UX Design"),
+      job_type: pick(o.job_type, JOB_TYPES, "Internship"),
+      term: String(o.term || "").trim(),
+      pay: String(o.pay || "").trim(),
+      class_years: CLASS_YEARS.filter(function (y) { return (o.class_years || []).indexOf(y) > -1; }),
+      summary: String(o.summary || "").trim(),
+      link_url: safeUrl(o.link_url),
+      apply_email: safeEmail(o.apply_email),
+      deadline: dl || "Rolling",
+      alumni_name: o.alumni_name ? String(o.alumni_name).trim() : "",
+      created_at: o.created_at || new Date().toISOString(),
+      updated_at: o.updated_at || o.created_at || new Date().toISOString()
+    };
+  }
+
+  function readData() {
+    try {
+      var d = JSON.parse(document.getElementById("board-data").textContent || "{}");
+      return { settings: { suggestEmail: safeEmail(d.settings && d.settings.suggestEmail) }, listings: (Array.isArray(d.listings) ? d.listings : []).map(normalize) };
+    } catch (e) { return { settings: { suggestEmail: "" }, listings: [] }; }
+  }
+
+  var DATA = readData();
+  var CAP = { artifact: null, sample: null, downloads: null };
+  var state = { tab: "internships", category: "All", year: "All", view: "card", sort: "newest", q: "", page: 0, admin: false, preview: false, status: "live", modal: null };
+  var root = document.getElementById("root");
+
+  // ---------- page (re)generation ----------
+  function buildPage(data) {
+    var json = JSON.stringify(data).replace(/</g, "\\u003c");
+    return "<!doctype html>\n<html lang=\"en\">\n<head>\n" + HEAD +
+      document.querySelector('link[rel="icon"]').outerHTML + "\n" +
+      '<style id="styles">' + document.getElementById("styles").textContent + "</style>\n</head>\n<body>\n<div id=\"root\"></div>\n" +
+      '<script type="application/json" id="board-data">' + json + "<\/script>\n" +
+      '<script id="app">' + document.getElementById("app").textContent + "<\/script>\n</body>\n</html>\n";
+  }
+
+  var PUBLISH_MSG = {
+    conflict: "Someone else saved the board first, so it's reloading with their version. Your change is kept and will reopen.",
+    rate_limited: "Saving too quickly. Wait a moment, then save again.",
+    too_large: "The board is too large to save. Remove some old listings and try again."
+  };
+  function readOnlyMsg() { return "Saving isn't available here. Open the board from claude.ai while signed in to make changes."; }
+
+  function commit(newData, flash, draft) {
+    if (!CAP.artifact) { toast("Can't save", readOnlyMsg()); return Promise.resolve(false); }
+    ss("kujl-flash", flash);
+    if (draft) ss("kujl-draft", JSON.stringify(draft));
+    busy(true);
+    return CAP.artifact.publish(buildPage(newData)).then(function () { return true; }, function (e) {
+      busy(false);
+      var code = e && e.code;
+      if (code === "conflict") { ss("kujl-flash", null); toast("Board changed", PUBLISH_MSG.conflict); return false; }
+      ss("kujl-flash", null); ss("kujl-draft", null);
+      if (["not_writer", "not_granted", "not_declared", "consent_required", "capability_disabled", "capability_removed"].indexOf(code) > -1) { toast("Can't save", readOnlyMsg()); }
+      else toast("Couldn't save", PUBLISH_MSG[code] || ("Something went wrong while publishing" + (e && e.message ? ": " + e.message : "") + ". Try again."));
+      return false;
+    });
+  }
+
+  // ---------- filtering ----------
+  function editing() { return state.admin && !state.preview; }
+  function togglePreview() { if (!state.admin) return; state.preview = !state.preview; state.status = "live"; state.page = 0; if (state.modal) closeModal(); renderAll(); }
+  function inTab(l) { return state.tab === "internships" ? l.job_type === "Internship" : l.job_type !== "Internship"; }
+  function filtered() {
+    var q = state.q.trim().toLowerCase();
+    var r = DATA.listings.filter(function (l) {
+      if (!inTab(l)) return false;
+      var exp = isExpired(l);
+      if (editing() && state.status === "expired" ? !exp : exp) return false;
+      if (state.category !== "All" && l.category !== state.category) return false;
+      if (state.tab === "internships") {
+        if (state.year !== "All" && l.class_years.indexOf(state.year) < 0) return false;
+      }
+      if (q) {
+        var hay = [l.role_title, l.company, l.parent_company, l.location, l.summary, l.term, l.work_mode, l.pay].join(" ").toLowerCase();
+        if (hay.indexOf(q) < 0) return false;
+      }
+      return true;
+    });
+    if (state.sort === "deadline") {
+      r.sort(function (a, b) { var da = parseDeadline(a.deadline), db = parseDeadline(b.deadline); if (!da && !db) return 0; if (!da) return 1; if (!db) return -1; return da - db; });
+    } else {
+      r.sort(function (a, b) { return String(b.created_at).localeCompare(String(a.created_at)); });
+    }
+    return r;
+  }
+  function expiredCount() { return DATA.listings.filter(function (l) { return inTab(l) && isExpired(l); }).length; }
+
+  // ---------- badges ----------
+  function catBadge(c) { return '<span class="badge ' + (c === "Graphic Design" ? "b-gd" : "b-ux") + '">' + esc(c) + "</span>"; }
+  function typeBadge(t) { var cls = { Internship: "b-intern", "Full-Time": "b-green", "Part-Time": "b-amber", Freelance: "b-rose" }[t] || ""; return '<span class="badge ' + cls + '">' + esc(t) + "</span>"; }
+  function payBadge(p) { return p ? '<span class="badge b-green">' + icon("dollar-sign", "i-xs") + esc(p.replace(/^\$/, "")) + "</span>" : ""; }
+  function modeBadge(m) { return m ? '<span class="badge b-plain">' + icon(m === "Remote" ? "laptop" : "map-pin", "i-xs") + esc(m) + "</span>" : ""; }
+  function termBadge(t) { return t ? '<span class="badge b-plain">' + icon("sun", "i-xs") + esc(t) + "</span>" : ""; }
+
+  // ---------- shell ----------
+  function renderShell() {
+    root.innerHTML =
+      '<header class="nav"><div class="nav-inner"><a class="brand" href="#" data-action="home">' + icon("briefcase", "i-lg") + "<span>KU Design Job Leads</span></a></div></header>" +
+      '<div id="adminbar"></div>' +
+      '<main><div class="stack">' +
+        '<div class="head" id="head"></div>' +
+        '<div class="toolbar" id="toolbar"></div>' +
+        '<div class="subbar" id="subbar"></div>' +
+        '<div id="results" aria-live="polite"></div>' +
+        '<nav class="pager" id="pager" aria-label="Pages"></nav>' +
+      "</div></main>" +
+      '<footer><div class="foot-inner"><div class="foot-grid">' +
+        '<div><div class="foot-brand">' + icon("briefcase", "i-md") + "KU Design Job Leads</div><p>A curated internship and job board for KU design students. Every listing is reviewed before it goes up.</p></div>" +
+        '<div><h4>Students</h4><ul><li><a href="https://career.ku.edu/" target="_blank" rel="noopener noreferrer">KU Career Center</a></li><li id="foot-suggest"></li></ul></div>' +
+        '<div><h4>Program</h4><ul><li><a href="https://design.ku.edu/" target="_blank" rel="noopener noreferrer">KU Department of Design</a></li></ul></div>' +
+      '</div><div class="foot-copy">&copy; ' + new Date().getFullYear() + " KU Design. All rights reserved.</div></div></footer>" +
+      '<div id="fab"></div><div id="modal"></div><div class="toasts" id="toasts" role="status"></div>';
+    renderAll();
+  }
+
+  function renderAll() { renderAdminBar(); renderHead(); renderToolbar(); renderSubbar(); renderResults(); renderFab(); renderModal(); }
+
+  function renderAdminBar() {
+    var el = document.getElementById("adminbar");
+    if (!state.admin) { el.innerHTML = ""; el.className = ""; return; }
+    el.className = "adminbar";
+    if (state.preview) {
+      el.innerHTML = '<div class="adminbar-inner"><span class="adminbar-note">' + icon("graduation-cap", "i-sm") + "Student view. This is exactly what students see (minus this bar).</span>" +
+        '<button class="btn btn-primary" data-action="preview">' + icon("pencil", "i-sm") + 'Back to editing</button><span class="kbd-hint">Shift+A</span></div>';
+      return;
+    }
+    var n = expiredCount();
+    el.innerHTML = '<div class="adminbar-inner">' +
+      '<span class="adminbar-note">' + icon("pencil", "i-sm") + "You're editing. Students see this board without these controls.</span>" +
+      '<div class="seg" role="group" aria-label="Show">' +
+        '<button class="btn btn-ghost" data-action="status" data-v="live" aria-pressed="' + (state.status === "live") + '">Live</button>' +
+        '<button class="btn btn-ghost" data-action="status" data-v="expired" aria-pressed="' + (state.status === "expired") + '">Expired' + (n ? " (" + n + ")" : "") + "</button>" +
+      "</div>" +
+      '<button class="btn btn-outline" data-action="preview" title="Shift+A">' + icon("graduation-cap", "i-sm") + "Student view</button>" +
+      '<button class="btn btn-outline" data-action="settings">' + icon("settings", "i-sm") + "Settings</button>" +
+      (CAP.downloads ? '<button class="btn btn-outline" data-action="download">' + icon("download", "i-sm") + "Download site file</button>" : "") +
+      '<button class="btn btn-primary" data-action="add">' + icon("plus", "i-sm") + "Add " + (state.tab === "internships" ? "internship" : "job") + "</button>" +
+    "</div>";
+  }
+
+  function renderHead() {
+    var intern = state.tab === "internships";
+    document.getElementById("head").innerHTML =
+      "<div><h1>" + (intern ? "Internships" : "Jobs") + "</h1><p class=\"lede\">" +
+      (intern ? "Browse design internships curated for students." : "Browse full-time, part-time, and freelance design positions.") + "</p></div>" +
+      '<div class="seg" role="group" aria-label="Position type">' +
+        '<button class="btn btn-ghost" data-action="tab" data-v="internships" aria-pressed="' + intern + '">' + icon("graduation-cap") + "Internships</button>" +
+        '<button class="btn btn-ghost" data-action="tab" data-v="jobs" aria-pressed="' + !intern + '">' + icon("briefcase") + "Jobs</button>" +
+      "</div>";
+  }
+
+  function segBtn(action, v, label, cur, extra) { return '<button class="btn btn-ghost" data-action="' + action + '" data-v="' + esc(v) + '" aria-pressed="' + (cur === v) + '">' + (extra || "") + esc(label) + "</button>"; }
+
+  function renderToolbar() {
+    document.getElementById("toolbar").innerHTML =
+      '<label class="search"><span class="sr-only">Search</span>' + icon("search") + '<input class="input" id="q" type="search" placeholder="Search roles, companies…" value="' + esc(state.q) + '"></label>' +
+      '<div class="vr"></div>' +
+      '<div class="seg" role="group" aria-label="Sort by">' + segBtn("sort", "newest", "Post Date", state.sort) + segBtn("sort", "deadline", "Deadline", state.sort) + "</div>" +
+      '<div class="vr"></div>' +
+      '<div class="seg" role="group" aria-label="Category">' + ["All"].concat(CATEGORIES).map(function (c) { return segBtn("cat", c, c, state.category); }).join("") + "</div>" +
+      '<div class="vr"></div>' +
+      '<div class="seg" role="group" aria-label="Layout">' + segBtn("view", "card", "Card", state.view, icon("layout-grid")) + segBtn("view", "list", "List", state.view, icon("list")) + "</div>";
+  }
+
+  function renderSubbar() {
+    var el = document.getElementById("subbar");
+    var html = "";
+    if (state.tab === "internships") {
+      html += '<span class="subbar-label">Open to</span>' +
+        '<div class="seg" role="group" aria-label="Open to class year">' + segBtn("year", "All", "All years", state.year) +
+        CLASS_YEARS.map(function (y) { return segBtn("year", y, plural(y), state.year); }).join("") + "</div>" +
+        "";
+    }
+    html += '<span class="count" id="count"></span>';
+    el.innerHTML = html;
+  }
+
+  function cardHTML(l) {
+    var intern = l.job_type === "Internship";
+    var dl = parseDeadline(l.deadline), left = daysLeft(l), exp = isExpired(l);
+    var link = safeUrl(l.link_url), mail = safeEmail(l.apply_email);
+    var action = link
+      ? '<a class="btn btn-secondary btn-block" href="' + esc(link) + '" target="_blank" rel="noopener noreferrer" data-stop>' + icon("external-link") + "View Posting</a>"
+      : mail ? '<a class="btn btn-outline btn-block" href="mailto:' + esc(mail) + '" data-stop>' + icon("mail") + "Email to Apply</a>"
+      : '<p class="nolink">No link provided</p>';
+    var chips = [payBadge(l.pay), modeBadge(l.work_mode), termBadge(l.term)].join("");
+    return '<article class="card" tabindex="0" role="button" data-action="open" data-id="' + esc(l.id) + '" aria-label="' + esc(l.role_title + " at " + l.company) + '">' +
+      '<div class="card-top">' + catBadge(l.category) + (intern ? "" : typeBadge(l.job_type)) +
+        (exp ? '<span class="deadline">' + icon("clock", "i-xs") + "Closed " + esc(fmtDate(l.deadline, true)) + "</span>"
+          : dl ? '<span class="deadline' + (left !== null && left <= 7 ? " soon" : "") + '">' + icon("calendar", "i-xs") + (left === 0 ? "Due today" : esc(fmtDate(l.deadline))) + "</span>" : "") +
+      "</div>" +
+      '<div class="card-body"><h3>' + esc(l.role_title) + "</h3>" +
+        '<div class="meta">' + icon("building-2") + "<b>" + esc(l.company) + "</b></div>" +
+        (l.location ? '<div class="meta">' + icon("map-pin", "i-sm") + "<span>" + esc(l.location) + "</span></div>" : "") +
+        (chips ? '<div class="chips">' + chips + "</div>" : "") +
+        (intern && l.class_years.length ? '<div class="meta">' + icon("graduation-cap", "i-sm") + "<span>" + esc(yearsText(l.class_years)) + "</span></div>" : "") +
+        (l.alumni_name ? '<div class="shared">' + icon("user", "i-xs") + "Shared by: " + esc(l.alumni_name) + "</div>" : "") +
+        '<p class="blurb">' + esc(l.summary) + "</p>" +
+      "</div>" +
+      '<div class="card-foot">' + action + "</div>" +
+      (editing() ? '<div class="card-admin"><button class="btn btn-ghost btn-icon" data-action="edit" data-id="' + esc(l.id) + '" aria-label="Edit">' + icon("pencil", "i-sm") + '</button><button class="btn btn-ghost btn-icon btn-danger" data-action="delete" data-id="' + esc(l.id) + '" aria-label="Remove">' + icon("trash-2", "i-sm") + "</button></div>" : "") +
+    "</article>";
+  }
+
+  function rowHTML(l) {
+    var intern = l.job_type === "Internship";
+    var link = safeUrl(l.link_url), mail = safeEmail(l.apply_email);
+    var sub = [l.company, l.location, intern ? l.term : ""].filter(Boolean).join(" · ");
+    return '<article class="row" tabindex="0" role="button" data-action="open" data-id="' + esc(l.id) + '" aria-label="' + esc(l.role_title + " at " + l.company) + '">' +
+      '<div class="row-logo">' + icon("building-2", "i-md") + "</div>" +
+      '<div class="row-main"><div class="row-title"><h3>' + esc(l.role_title) + "</h3>" + (intern ? "" : typeBadge(l.job_type)) + payBadge(l.pay) + (isExpired(l) ? '<span class="badge b-expired">Closed</span>' : "") + "</div>" +
+      '<p class="row-sub">' + esc(sub) + "</p></div>" +
+      '<p class="row-blurb">' + esc(l.summary) + "</p>" +
+      (link ? '<a class="row-link" href="' + esc(link) + '" target="_blank" rel="noopener noreferrer" data-stop aria-label="View posting">' + icon("external-link") + "</a>"
+        : mail ? '<a class="row-link" href="mailto:' + esc(mail) + '" data-stop aria-label="Email to apply">' + icon("mail") + "</a>" : "") +
+      (editing() ? '<div class="row-actions"><button class="btn btn-ghost btn-icon" data-action="edit" data-id="' + esc(l.id) + '" aria-label="Edit">' + icon("pencil", "i-sm") + '</button><button class="btn btn-ghost btn-icon btn-danger" data-action="delete" data-id="' + esc(l.id) + '" aria-label="Remove">' + icon("trash-2", "i-sm") + "</button></div>" : "") +
+    "</article>";
+  }
+
+  function renderResults() {
+    var list = filtered();
+    var pages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
+    if (state.page > pages - 1) state.page = pages - 1;
+    var slice = list.slice(state.page * PAGE_SIZE, state.page * PAGE_SIZE + PAGE_SIZE);
+    var noun = state.tab === "internships" ? "internship" : "job";
+    var count = document.getElementById("count");
+    if (count) count.textContent = list.length + " " + noun + (list.length === 1 ? "" : "s") + (editing() && state.status === "expired" ? " expired" : "");
+    var el = document.getElementById("results");
+    if (!list.length) {
+      var anyInTab = DATA.listings.some(function (l) { return inTab(l) && !isExpired(l); });
+      var filtering = state.q || state.category !== "All" || (state.tab === "internships" && state.year !== "All");
+      var big, small, btn = "";
+      if (editing() && state.status === "expired") { big = "No expired " + noun + "s"; small = "Listings move here automatically after their deadline passes."; }
+      else if (filtering) { big = "No " + noun + "s match these filters"; small = "Try a different search or clear a filter."; btn = '<button class="btn btn-outline" data-action="clear">Clear filters</button>'; }
+      else if (editing() && !anyInTab) { big = "Add your first " + noun; small = "Paste a posting or drop a PDF or screenshot, and the details fill in for you to check."; btn = '<button class="btn btn-primary" data-action="add">' + icon("plus", "i-sm") + "Add " + noun + "</button>"; }
+      else { big = "No " + noun + "s posted right now"; small = "New postings are added as they come in. Check back soon."; }
+      el.innerHTML = '<div class="empty">' + icon("briefcase", "i-xl") + '<p class="big">' + big + '</p><p class="small">' + small + "</p>" + btn + "</div>";
+    } else if (state.view === "list") {
+      el.innerHTML = '<div class="rows">' + slice.map(rowHTML).join("") + "</div>";
+    } else {
+      el.innerHTML = '<div class="grid">' + slice.map(cardHTML).join("") + "</div>";
+    }
+    var pg = document.getElementById("pager");
+    if (pages <= 1) { pg.innerHTML = ""; return; }
+    var h = '<button class="btn btn-outline" data-action="page" data-v="' + (state.page - 1) + '"' + (state.page === 0 ? " disabled" : "") + ">Previous</button>";
+    for (var p = Math.max(0, state.page - 2); p <= Math.min(pages - 1, state.page + 2); p++) h += '<button class="btn btn-outline" data-action="page" data-v="' + p + '"' + (p === state.page ? ' aria-current="page"' : "") + ">" + (p + 1) + "</button>";
+    h += '<button class="btn btn-outline" data-action="page" data-v="' + (state.page + 1) + '"' + (state.page >= pages - 1 ? " disabled" : "") + ">Next</button>";
+    pg.innerHTML = h;
+  }
+
+  function renderFab() {
+    var el = document.getElementById("fab"), fs = document.getElementById("foot-suggest");
+    var mail = DATA.settings.suggestEmail;
+    var href = mail ? "mailto:" + mail + "?subject=" + encodeURIComponent("Posting suggestion for KU Design Job Leads") + "&body=" + encodeURIComponent("Link to the posting:\n\nCompany:\n\nWhy it's a good fit for KU design students:\n") : "";
+    if (fs) fs.innerHTML = mail ? '<a href="' + esc(href) + '">Suggest a posting</a>' : "";
+    if (editing()) { el.innerHTML = '<button class="fab" data-action="add" aria-label="Add a posting" title="Add a posting">' + icon("plus", "i-lg") + "</button>"; return; }
+    el.innerHTML = mail ? '<a class="fab" href="' + esc(href) + '" aria-label="Suggest a posting by email" title="Suggest a posting">' + icon("plus", "i-lg") + "</a>" : "";
+  }
+
+  // ---------- modals ----------
+  function openModal(m) { state.lastFocus = document.activeElement; state.modal = m; renderModal(); }
+  function closeModal() {
+    if (state.modal && state.modal.ctl) try { state.modal.ctl.abort(); } catch (e) {}
+    state.modal = null; renderModal();
+    if (state.lastFocus && document.contains(state.lastFocus)) try { state.lastFocus.focus(); } catch (e) {}
+  }
+  function find(id) { for (var i = 0; i < DATA.listings.length; i++) if (DATA.listings[i].id === id) return DATA.listings[i]; return null; }
+
+  function renderModal() {
+    var el = document.getElementById("modal");
+    var m = state.modal;
+    if (!m) { el.innerHTML = ""; document.body.style.overflow = ""; return; }
+    document.body.style.overflow = "hidden";
+    var html = "";
+    if (m.type === "detail") html = detailHTML(find(m.id));
+    else if (m.type === "editor") html = editorHTML(m);
+    else if (m.type === "settings") html = settingsHTML();
+    else if (m.type === "confirm") html = confirmHTML(m);
+    el.innerHTML = '<div class="overlay" data-action="backdrop">' + html + "</div>";
+    var f = el.querySelector("[autofocus]") || el.querySelector(".dialog input, .dialog textarea, .dialog button");
+    if (f) try { f.focus({ preventScroll: true }); } catch (e) {}
+    if (m.type === "editor") wireEditor();
+  }
+
+  function detailHTML(l) {
+    if (!l) return "";
+    var intern = l.job_type === "Internship";
+    var link = safeUrl(l.link_url), mail = safeEmail(l.apply_email);
+    return '<div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dlg-t">' +
+      '<div class="dialog-head"><h2 id="dlg-t">' + (intern ? "Internship Details" : "Job Details") + '</h2><button class="x" data-action="close" aria-label="Close">' + icon("x", "i-md") + "</button></div>" +
+      '<div class="dialog-body">' +
+        '<div><span class="lbl">Role / Title</span><h3 class="d-title">' + esc(l.role_title) + "</h3></div>" +
+        '<div class="d-val">' + icon("building-2", "i-md") + '<div><span class="lbl">Company</span><p style="font-weight:600">' + esc(l.company) + (l.parent_company ? ' <span style="font-weight:400;color:var(--muted-fg)">(' + esc(l.parent_company) + ")</span>" : "") + "</p></div></div>" +
+        (l.alumni_name ? '<div class="shared" style="font-size:.875rem">' + icon("user") + "Alumni connection: " + esc(l.alumni_name) + "</div>" : "") +
+        '<div class="d-row">' +
+          (l.location ? '<div><span class="lbl">Location</span><p class="d-val">' + icon("map-pin") + esc(l.location) + "</p></div>" : "") +
+          (l.work_mode ? '<div><span class="lbl">Work mode</span><p class="d-val">' + icon(l.work_mode === "Remote" ? "laptop" : "building-2") + esc(l.work_mode) + "</p></div>" : "") +
+          (l.term ? '<div><span class="lbl">Term</span><p class="d-val">' + icon("sun") + esc(l.term) + "</p></div>" : "") +
+          '<div><span class="lbl">Pay</span><p class="d-val">' + icon("dollar-sign") + esc(l.pay ? l.pay.replace(/^\$/, "") : "Not listed") + "</p></div>" +
+        "</div>" +
+        '<div class="chips">' + catBadge(l.category) + typeBadge(l.job_type) + (isExpired(l) ? '<span class="badge b-expired">Closed</span>' : "") + "</div>" +
+        (intern && l.class_years.length ? '<div><span class="lbl">Open to</span><p class="d-val">' + icon("graduation-cap") + esc(yearsText(l.class_years)) + "</p></div>" : "") +
+        (l.summary ? '<div><span class="lbl">Summary</span><p class="d-summary">' + esc(l.summary) + "</p></div>" : "") +
+        '<div class="d-row" style="font-size:.875rem"><div><span class="lbl">Deadline</span><p class="d-val">' + icon("calendar") + esc(fmtDate(l.deadline)) + '</p></div><div><span class="lbl">Posted</span><p>' + esc(fmtPosted(l.created_at)) + "</p></div></div>" +
+      "</div>" +
+      '<div class="dialog-foot">' +
+        (editing() ? '<div style="display:flex;gap:.25rem"><button class="btn btn-ghost" data-action="edit" data-id="' + esc(l.id) + '">' + icon("pencil", "i-sm") + 'Edit</button><button class="btn btn-ghost btn-danger" data-action="delete" data-id="' + esc(l.id) + '">' + icon("trash-2", "i-sm") + "Remove</button></div>" : "") +
+        '<div class="right">' +
+          (mail ? '<a class="btn btn-outline" href="mailto:' + esc(mail) + '">' + icon("mail") + "Email to Apply</a>" : "") +
+          (link ? '<a class="btn btn-secondary" href="' + esc(link) + '" target="_blank" rel="noopener noreferrer">' + icon("external-link") + "View Posting</a>" : "") +
+        "</div>" +
+      "</div></div>";
+  }
+
+  function confirmHTML(m) {
+    var l = find(m.id);
+    return '<div class="dialog dialog-sm" role="alertdialog" aria-modal="true" aria-labelledby="dlg-t">' +
+      '<div class="dialog-head"><h2 id="dlg-t">Remove this listing?</h2><button class="x" data-action="close" aria-label="Close">' + icon("x", "i-md") + "</button></div>" +
+      '<div class="dialog-body"><p>' + esc(l ? l.role_title + " at " + l.company : "This listing") + " will be taken off the board for everyone.</p></div>" +
+      '<div class="dialog-foot"><div class="right"><button class="btn btn-outline" data-action="close">Cancel</button><button class="btn btn-primary" data-action="confirm-delete" data-id="' + esc(m.id) + '">' + icon("trash-2", "i-sm") + "Remove</button></div></div></div>";
+  }
+
+  function settingsHTML() {
+    return '<div class="dialog dialog-sm" role="dialog" aria-modal="true" aria-labelledby="dlg-t">' +
+      '<div class="dialog-head"><h2 id="dlg-t">Board settings</h2><button class="x" data-action="close" aria-label="Close">' + icon("x", "i-md") + "</button></div>" +
+      '<div class="dialog-body"><div class="field"><label for="s-email">Email for student suggestions</label>' +
+      '<input class="input" id="s-email" type="email" autofocus placeholder="you@ku.edu" value="' + esc(DATA.settings.suggestEmail) + '">' +
+      '<p class="hint">Students get a + button that opens an email to this address with a short template. Leave it empty to hide the button.</p></div></div>' +
+      '<div class="dialog-foot"><div class="right"><button class="btn btn-outline" data-action="close">Cancel</button><button class="btn btn-primary" data-action="save-settings">Save settings</button></div></div></div>';
+  }
+
+  function blankListing() { return normalize({ job_type: state.tab === "internships" ? "Internship" : "Full-Time", class_years: [], deadline: "Rolling", category: state.category !== "All" ? state.category : "UI/UX Design" }); }
+
+  function opts(list, cur, blank) { return (blank ? '<option value="">' + esc(blank) + "</option>" : "") + list.map(function (v) { return '<option' + (v === cur ? " selected" : "") + ">" + esc(v) + "</option>"; }).join(""); }
+
+  function editorHTML(m) {
+    var d = m.draft, adding = !m.editingId;
+    var canAI = !!CAP.sample && adding;
+    var tab = canAI ? m.tab : "form";
+    var head = '<div class="dialog-head"><h2 id="dlg-t">' + (adding ? "Add a posting" : "Edit listing") + '</h2><button class="x" data-action="close" aria-label="Close">' + icon("x", "i-md") + "</button></div>";
+    var tabs = canAI ? '<div class="tabs" role="tablist"><button class="tab" role="tab" data-action="etab" data-v="ai" aria-selected="' + (tab === "ai") + '">' + icon("sparkles", "i-sm") + 'Paste or drop</button><button class="tab" role="tab" data-action="etab" data-v="form" aria-selected="' + (tab === "form") + '">' + icon("pencil", "i-sm") + "Fill in manually</button></div>" : "";
+    var body;
+    if (tab === "ai") {
+      body = tabs +
+        '<div class="field"><label for="ai-link">Posting link</label><input class="input" id="ai-link" type="url" placeholder="https://" value="' + esc(m.aiLink || "") + '"><p class="hint">Optional. Saved as the View Posting button.</p></div>' +
+        '<div class="field"><label for="ai-text">Paste the posting page</label><textarea class="textarea" id="ai-text" autofocus placeholder="On the job page, press Ctrl+A (⌘A on Mac), copy, and paste here. Extra menus and footers are fine.">' + esc(m.aiText || "") + "</textarea></div>" +
+        '<div class="or">or</div>' +
+        (m.file ? '<div class="file-pill">' + icon("file-text") + "<span>" + esc(m.file.name) + '</span><button class="x" data-action="clear-file" aria-label="Remove file">' + icon("x", "i-sm") + "</button></div>"
+          : '<label class="drop" id="drop" tabindex="0">' + icon("upload", "i-md") + "<span><b>Drop a PDF, screenshot, or text file</b></span><span>or click to choose one</span>" +
+            '<input type="file" id="ai-file" class="sr-only" accept=".pdf,.txt,.md,image/png,image/jpeg,image/webp,image/gif"></label>') +
+        (m.aiError ? '<div class="note err">' + icon("x", "i-sm") + "<span>" + esc(m.aiError) + "</span></div>" : "") +
+        (m.aiBusy ? '<div class="thinking">' + icon("loader-circle", "spin") + "<span>" + esc(m.aiBusy) + "</span></div>" : "");
+      var foot = '<div class="dialog-foot"><span style="font-size:.75rem;color:var(--muted-fg)">Uses your Claude account. Nothing is posted until you review it.</span><div class="right">' +
+        (m.aiBusy ? '<button class="btn btn-outline" data-action="ai-stop">Stop</button>' : '<button class="btn btn-outline" data-action="close">Cancel</button>') +
+        '<button class="btn btn-primary" data-action="extract"' + (m.aiBusy ? " disabled" : "") + ">" + icon("sparkles", "i-sm") + "Fill in details</button></div></div>";
+      return '<div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dlg-t">' + head + '<div class="dialog-body">' + body + "</div>" + foot + "</div>";
+    }
+    var intern = d.job_type === "Internship";
+    var rolling = d.deadline === "Rolling";
+    body = tabs +
+      (m.extracted ? '<div class="note">' + icon("sparkles", "i-sm") + "<span>Details filled in from the posting. Check each field, then publish.</span></div>" : "") +
+      (m.restored ? '<div class="note warn">' + icon("clock", "i-sm") + "<span>Your unsaved change was restored. Review it and save again.</span></div>" : "") +
+      '<div class="form">' +
+        '<div class="field full"><label for="f-role">Role title <span class="req">*</span></label><input class="input" id="f-role" data-f="role_title" required value="' + esc(d.role_title) + '"' + (canAI ? "" : " autofocus") + "></div>" +
+        '<div class="field"><label for="f-company">Company <span class="req">*</span></label><input class="input" id="f-company" data-f="company" required value="' + esc(d.company) + '"></div>' +
+        '<div class="field"><label for="f-parent">Parent company</label><input class="input" id="f-parent" data-f="parent_company" placeholder="Only if different" value="' + esc(d.parent_company) + '"></div>' +
+        '<div class="field"><label for="f-loc">Location</label><input class="input" id="f-loc" data-f="location" placeholder="Kansas City, MO" value="' + esc(d.location) + '"></div>' +
+        '<div class="field"><label for="f-mode">Work mode</label><select class="select" id="f-mode" data-f="work_mode">' + opts(MODES, d.work_mode, "Not listed") + "</select></div>" +
+        '<div class="field"><label for="f-cat">Category</label><select class="select" id="f-cat" data-f="category">' + opts(CATEGORIES, d.category) + "</select></div>" +
+        '<div class="field"><label for="f-type">Type</label><select class="select" id="f-type" data-f="job_type">' + opts(JOB_TYPES, d.job_type) + "</select></div>" +
+        (intern ?
+          '<div class="field"><label for="f-term">Term</label><input class="input" id="f-term" data-f="term" placeholder="Summer 2027" value="' + esc(d.term) + '"></div>' +
+          '<div class="field full"><label>Open to</label><div class="checks">' + CLASS_YEARS.map(function (y) { return '<label class="check"><input type="checkbox" data-year="' + y + '"' + (d.class_years.indexOf(y) > -1 ? " checked" : "") + ">" + plural(y) + "</label>"; }).join("") + '</div><p class="hint">Which students this is realistic for. Leave all unchecked if unsure.</p></div>'
+          : "") +
+        '<div class="field"><label for="f-pay">Pay</label><input class="input" id="f-pay" data-f="pay" placeholder="$22/hr or $5,000 stipend" value="' + esc(d.pay) + '"></div>' +
+        '<div class="field"><label for="f-deadline">Deadline</label><div class="inline"><input class="input" id="f-deadline" type="date" data-f="deadline"' + (rolling ? " disabled" : ' value="' + esc(d.deadline) + '"') + '><label class="check"><input type="checkbox" id="f-rolling"' + (rolling ? " checked" : "") + ">Rolling</label></div></div>" +
+        '<div class="field"><label for="f-alum">Shared by</label><input class="input" id="f-alum" data-f="alumni_name" placeholder="Alum or contact name" value="' + esc(d.alumni_name) + '"></div>' +
+        '<div class="field full"><label for="f-sum">Summary</label><textarea class="textarea" id="f-sum" data-f="summary" placeholder="Two sentences on what the role is and who it suits.">' + esc(d.summary) + "</textarea></div>" +
+        '<div class="field"><label for="f-link">Posting link</label><input class="input" id="f-link" type="url" data-f="link_url" placeholder="https://" value="' + esc(d.link_url) + '"></div>' +
+        '<div class="field"><label for="f-mail">Apply by email</label><input class="input" id="f-mail" type="email" data-f="apply_email" placeholder="jobs@company.com" value="' + esc(d.apply_email) + '"></div>' +
+      "</div>" +
+      (m.formError ? '<div class="note err">' + icon("x", "i-sm") + "<span>" + esc(m.formError) + "</span></div>" : "");
+    return '<div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dlg-t">' + head + '<div class="dialog-body">' + body + "</div>" +
+      '<div class="dialog-foot"><div class="right"><button class="btn btn-outline" data-action="close">Cancel</button><button class="btn btn-primary" data-action="save">' + (adding ? "Publish to board" : "Save changes") + "</button></div></div></div>";
+  }
+
+  function readForm() {
+    var m = state.modal; if (!m || m.type !== "editor") return;
+    var el = document.getElementById("modal");
+    var t = el.querySelector("#ai-text"); if (t) m.aiText = t.value;
+    var lk = el.querySelector("#ai-link"); if (lk) m.aiLink = lk.value;
+    if (!el.querySelector(".form")) return;
+    var d = m.draft;
+    el.querySelectorAll("[data-f]").forEach(function (inp) { if (!inp.disabled) d[inp.getAttribute("data-f")] = inp.value; });
+    var years = el.querySelectorAll("[data-year]");
+    if (years.length) d.class_years = Array.prototype.filter.call(years, function (c) { return c.checked; }).map(function (c) { return c.getAttribute("data-year"); });
+    var r = el.querySelector("#f-rolling"); if (r && r.checked) d.deadline = "Rolling";
+  }
+
+  function wireEditor() {
+    var el = document.getElementById("modal");
+    var type = el.querySelector("#f-type");
+    if (type) type.addEventListener("change", function () { readForm(); renderModal(); });
+    var r = el.querySelector("#f-rolling");
+    if (r) r.addEventListener("change", function () { var di = el.querySelector("#f-deadline"); di.disabled = r.checked; if (r.checked) di.value = ""; else di.focus(); });
+    var drop = el.querySelector("#drop"), fi = el.querySelector("#ai-file");
+    if (drop && fi) {
+      fi.addEventListener("change", function () { if (fi.files && fi.files[0]) setFile(fi.files[0]); });
+      ["dragenter", "dragover"].forEach(function (ev) { drop.addEventListener(ev, function (e) { e.preventDefault(); drop.classList.add("over"); }); });
+      ["dragleave", "drop"].forEach(function (ev) { drop.addEventListener(ev, function (e) { e.preventDefault(); drop.classList.remove("over"); }); });
+      drop.addEventListener("drop", function (e) { var f = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]; if (f) setFile(f); });
+      drop.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); fi.click(); } });
+    }
+  }
+  function setFile(f) { readForm(); state.modal.file = f; state.modal.aiError = ""; renderModal(); }
+
+  // ---------- AI extraction ----------
+  function loadScript(src) { return new Promise(function (res, rej) { var s = document.createElement("script"); s.src = src; s.onload = res; s.onerror = function () { rej(new Error("load")); }; document.head.appendChild(s); }); }
+  function pdfInput(file) {
+    return (window.pdfjsLib ? Promise.resolve() : loadScript(PDFJS)).then(function () {
+      window.pdfjsLib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER;
+      return file.arrayBuffer();
+    }).then(function (buf) { return window.pdfjsLib.getDocument({ data: buf }).promise; }).then(function (doc) {
+      var n = Math.min(doc.numPages, 6), text = "", chain = Promise.resolve();
+      for (var i = 1; i <= n; i++) (function (i) { chain = chain.then(function () { return doc.getPage(i); }).then(function (p) { return p.getTextContent(); }).then(function (c) { text += c.items.map(function (it) { return it.str; }).join(" ") + "\n"; }); })(i);
+      return chain.then(function () {
+        if (text.replace(/\s+/g, "").length > 80) return { text: text };
+        return doc.getPage(1).then(function (p) {
+          var vp = p.getViewport({ scale: 1.6 }), cv = document.createElement("canvas");
+          cv.width = vp.width; cv.height = vp.height;
+          return p.render({ canvasContext: cv.getContext("2d"), viewport: vp }).promise.then(function () { return new Promise(function (r) { cv.toBlob(r, "image/png"); }); });
+        }).then(function (b) { return { image: b }; });
+      });
+    });
+  }
+  function prompt(text, hasImage) {
+    return "You are reading a job or internship posting for the University of Kansas design program (Interaction Design and Visual Communication Design). Today is " + todayISO() + ".\n\n" +
+      "Reply with ONLY one JSON object, no commentary, with exactly these keys:\n" +
+      '- "role_title": string\n' +
+      '- "company": the actual employer or brand the student would work for. If the posting is on a parent company\'s careers site (for example a Razorfish role on the Publicis Groupe site), use the brand.\n' +
+      '- "parent_company": the careers-site owner or parent organization only if different from company, else null\n' +
+      '- "location": "City, ST", or "Remote", or "" if unknown\n' +
+      '- "work_mode": "On-site" | "Hybrid" | "Remote" | null if not stated\n' +
+      '- "category": "UI/UX Design" for UX, UI, product, interaction, web or app design; "Graphic Design" for brand, visual, print, packaging, motion or illustration work\n' +
+      '- "job_type": "Internship" | "Full-Time" | "Part-Time" | "Freelance"\n' +
+      '- "term": the season and year for internships, like "Summer 2027", or "" if not stated\n' +
+      '- "pay": the pay as a short amount, like "$22/hr", "$20–25/hr", "$5,000 stipend" or "$65,000/yr", or "" if no amount is stated\n' +
+      '- "class_years": array containing any of "Sophomore", "Junior", "Senior" for whom the internship is realistic. Infer from requirements such as graduation year, "rising juniors", or "must be returning to school after the internship" (which excludes graduating seniors). If it only says current students, include all three. Use [] for non-internships or if you cannot tell.\n' +
+      '- "summary": exactly two plain-language sentences for students about what the work is and who it suits\n' +
+      '- "link_url": URL to apply or view the posting, or null\n' +
+      '- "apply_email": email to apply, or null\n' +
+      '- "deadline": application deadline as "YYYY-MM-DD", or "Rolling" if none is stated\n' +
+      '- "alumni_name": the person who shared the posting if mentioned, else null\n\n' +
+      (safeUrl(state.modal && state.modal.aiLink) ? "The posting's URL is " + safeUrl(state.modal.aiLink) + ". The pasted text may include site menus and footers; ignore them.\n\n" : "The pasted text may include site menus and footers; ignore them.\n\n") +
+      (hasImage ? "The posting is in the attached image." + (text ? "\n\nExtra text:\n" + text : "") : "Posting:\n\"\"\"\n" + text.slice(0, 20000) + "\n\"\"\"");
+  }
+  var SAMPLE_MSG = {
+    not_granted: "Claude access wasn't allowed for this page. Fill in the details manually instead.",
+    rate_limited: "Too many requests right now. Wait a minute and try again.",
+    invalid_json: "The details came back in an unexpected format. Try again, or fill them in manually.",
+    too_large: "That posting is too long. Paste just the main description and try again."
+  };
+  function extract() {
+    readForm();
+    var m = state.modal, text = (m.aiText || "").trim(), file = m.file;
+    if (!text && !file) { m.aiError = "Paste the page text or add a file. The board can't open links on its own."; renderModal(); return; }
+    m.aiError = ""; m.aiBusy = file ? "Reading " + file.name + "…" : "Thinking…"; renderModal();
+    var ctl = new AbortController(); m.ctl = ctl;
+    var prep;
+    if (!file) prep = Promise.resolve({ text: text });
+    else if (/pdf$/i.test(file.type) || /\.pdf$/i.test(file.name)) prep = pdfInput(file).then(function (r) { if (r.text && text) r.text = text + "\n\n" + r.text; return r; }, function () { throw { code: "pdf" }; });
+    else if (/^image\//.test(file.type)) prep = Promise.resolve({ image: file, text: text });
+    else prep = file.text().then(function (t) { return { text: (text ? text + "\n\n" : "") + t }; });
+    prep.then(function (inp) {
+      if (state.modal !== m) return;
+      m.aiBusy = "Thinking…"; renderModal();
+      if (inp.image) {
+        return CAP.sample.limits().then(function (lim) {
+          if (!lim || !lim.images) throw { code: "no_images" };
+          return CAP.sample.json(prompt(inp.text || "", true), { images: [inp.image], signal: ctl.signal });
+        });
+      }
+      return CAP.sample.json(prompt(inp.text, false), { signal: ctl.signal });
+    }).then(function (res) {
+      if (!res || state.modal !== m) return;
+      var d = normalize(Object.assign({}, res, { id: m.draft.id }));
+      if (safeUrl(m.aiLink)) d.link_url = safeUrl(m.aiLink);
+      m.draft = d; m.aiBusy = ""; m.tab = "form"; m.extracted = true; m.ctl = null;
+      renderModal();
+    }, function (e) {
+      if (state.modal !== m) return;
+      m.aiBusy = ""; m.ctl = null;
+      var code = e && e.code;
+      if (code === "cancelled") { renderModal(); return; }
+      m.aiError = code === "pdf" ? "Couldn't read that PDF. Paste the text or drop a screenshot instead."
+        : code === "no_images" ? "Images can't be read here. Paste the posting text instead."
+        : SAMPLE_MSG[code] || "Couldn't fill in the details. Try again, or fill them in manually.";
+      renderModal();
+    });
+  }
+
+  // ---------- saving ----------
+  function saveListing() {
+    readForm();
+    var m = state.modal, d = m.draft;
+    if (!d.role_title.trim() || !d.company.trim()) { m.formError = "Add a role title and company before saving."; renderModal(); return; }
+    if (d.link_url && !safeUrl(d.link_url)) { m.formError = "The posting link needs to start with https:// (or http://)."; renderModal(); return; }
+    if (d.apply_email && !safeEmail(d.apply_email)) { m.formError = "That apply email doesn't look right."; renderModal(); return; }
+    if (d.deadline !== "Rolling" && !/^\d{4}-\d{2}-\d{2}$/.test(d.deadline)) d.deadline = "Rolling";
+    var now = new Date().toISOString();
+    var rec = normalize(Object.assign({}, d, { updated_at: now, created_at: m.editingId ? d.created_at : now }));
+    if (rec.job_type !== "Internship") { rec.class_years = []; }
+    var next = { settings: DATA.settings, listings: DATA.listings.filter(function (x) { return x.id !== rec.id; }).concat([rec]) };
+    commit(next, (m.editingId ? "Saved changes to " : "Published ") + rec.role_title, { kind: "save", rec: rec, editingId: m.editingId || null });
+  }
+  function deleteListing(id) {
+    var l = find(id);
+    var next = { settings: DATA.settings, listings: DATA.listings.filter(function (x) { return x.id !== id; }) };
+    commit(next, "Removed " + (l ? l.role_title : "listing"), { kind: "delete", id: id });
+  }
+  function saveSettings() {
+    var v = (document.getElementById("s-email") || {}).value || "";
+    v = v.trim();
+    if (v && !safeEmail(v)) { toast("Check the email", "That address doesn't look right."); return; }
+    commit({ settings: { suggestEmail: v }, listings: DATA.listings }, "Settings saved", null);
+  }
+  function download() {
+    if (!CAP.downloads) return;
+    CAP.downloads.save({ filename: "index.html", data: new Blob([buildPage(DATA)], { type: "text/html" }) }).then(function () {
+      toast("Site file saved", "Upload index.html to a GitHub repository with Pages turned on to host the board on your own site.");
+    }, function (e) { if (e && e.code !== "declined") toast("Couldn't download", "Try again in a moment."); });
+  }
+
+  // ---------- toast / busy ----------
+  function toast(title, body) {
+    var t = document.createElement("div"); t.className = "toast";
+    t.innerHTML = "<b>" + esc(title) + "</b>" + (body ? "<span>" + esc(body) + "</span>" : "");
+    var box = document.getElementById("toasts"); if (!box) return;
+    box.appendChild(t); setTimeout(function () { t.remove(); }, 6000);
+  }
+  function busy(on) {
+    var b = document.getElementById("busy");
+    if (on && !b) { b = document.createElement("div"); b.id = "busy"; b.className = "busy"; b.innerHTML = icon("loader-circle", "spin i-md") + "<span>Publishing…</span>"; document.body.appendChild(b); }
+    if (!on && b) b.remove();
+  }
+
+  // ---------- events ----------
+  document.addEventListener("click", function (e) {
+    var t = e.target.closest("[data-action],[data-stop]");
+    if (!t) return;
+    if (t.hasAttribute("data-stop")) return;
+    var a = t.getAttribute("data-action"), v = t.getAttribute("data-v"), id = t.getAttribute("data-id");
+    if (a === "backdrop") { if (e.target === t) closeModal(); return; }
+    if (t.tagName === "A" && a !== "home") return;
+    e.preventDefault();
+    switch (a) {
+      case "home": state.tab = "internships"; state.page = 0; renderAll(); window.scrollTo(0, 0); break;
+      case "tab": if (state.tab !== v) { state.tab = v; state.page = 0; state.category = "All"; state.year = "All"; renderAll(); } break;
+      case "sort": state.sort = v; state.page = 0; renderToolbar(); renderResults(); break;
+      case "cat": state.category = v; state.page = 0; renderToolbar(); renderResults(); break;
+      case "view": state.view = v; try { localStorage.setItem("kujl-view", v); } catch (x) {} renderToolbar(); renderResults(); break;
+      case "year": state.year = v; state.page = 0; renderSubbar(); renderResults(); break;
+      case "status": state.status = v; state.page = 0; renderAdminBar(); renderResults(); break;
+      case "clear": state.q = ""; state.category = "All"; state.year = "All"; state.page = 0; renderToolbar(); renderSubbar(); renderResults(); break;
+      case "page": state.page = +v; renderResults(); document.getElementById("head").scrollIntoView({ block: "start" }); break;
+      case "open": openModal({ type: "detail", id: id }); break;
+      case "close": closeModal(); break;
+      case "add": openModal({ type: "editor", tab: CAP.sample ? "ai" : "form", draft: blankListing() }); break;
+      case "edit": var l = find(id); if (l) { state.modal = null; openModal({ type: "editor", tab: "form", editingId: id, draft: JSON.parse(JSON.stringify(l)) }); } break;
+      case "delete": state.modal = null; openModal({ type: "confirm", id: id }); break;
+      case "confirm-delete": deleteListing(id); break;
+      case "etab": readForm(); state.modal.tab = v; renderModal(); break;
+      case "clear-file": readForm(); state.modal.file = null; renderModal(); break;
+      case "extract": extract(); break;
+      case "ai-stop": if (state.modal && state.modal.ctl) state.modal.ctl.abort(); break;
+      case "save": saveListing(); break;
+      case "settings": openModal({ type: "settings" }); break;
+      case "save-settings": saveSettings(); break;
+      case "download": download(); break;
+      case "preview": togglePreview(); break;
+    }
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && state.modal) { closeModal(); return; }
+    if (e.shiftKey && (e.key === "A" || e.key === "a") && !e.metaKey && !e.ctrlKey && !e.altKey && state.admin) {
+      var tag = (document.activeElement && document.activeElement.tagName || "").toUpperCase();
+      if (tag !== "INPUT" && tag !== "TEXTAREA" && tag !== "SELECT" && !state.modal) { e.preventDefault(); togglePreview(); return; }
+    }
+    if ((e.key === "Enter" || e.key === " ") && e.target.matches && e.target.matches('article[data-action="open"]')) { e.preventDefault(); openModal({ type: "detail", id: e.target.getAttribute("data-id") }); }
+    if (e.key === "Tab" && state.modal) {
+      var f = document.querySelectorAll("#modal .dialog a[href], #modal .dialog button:not([disabled]), #modal .dialog input:not([disabled]):not(.sr-only), #modal .dialog select, #modal .dialog textarea, #modal .dialog [tabindex='0']");
+      if (!f.length) return;
+      var first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+  document.addEventListener("input", function (e) { if (e.target.id === "q") { state.q = e.target.value; state.page = 0; renderResults(); } });
+
+  // ---------- boot ----------
+  try { var sv = localStorage.getItem("kujl-view"); if (sv === "list" || sv === "card") state.view = sv; } catch (e) {}
+  renderShell();
+
+  var flash = ss("kujl-flash"); if (flash) { ss("kujl-flash", null); setTimeout(function () { toast(flash); }, 50); }
+
+  function restoreDraft() {
+    var raw = ss("kujl-draft"); if (!raw) return; ss("kujl-draft", null);
+    var d; try { d = JSON.parse(raw); } catch (e) { return; }
+    if (d.kind === "save") {
+      var cur = find(d.rec.id);
+      if (cur && cur.updated_at === d.rec.updated_at) return;
+      openModal({ type: "editor", tab: "form", editingId: d.editingId, draft: d.rec, restored: true });
+    } else if (d.kind === "delete" && find(d.id)) {
+      openModal({ type: "confirm", id: d.id });
+    }
+  }
+
+  if (window.claude && typeof window.claude.use === "function") {
+    var use = function (n) { try { return Promise.resolve(window.claude.use(n)).catch(function () { return null; }); } catch (e) { return Promise.resolve(null); } };
+    Promise.all([use("user"), use("artifact"), use("sample"), use("downloads")]).then(function (r) {
+      var user = r[0];
+      CAP.artifact = r[1]; CAP.sample = r[2]; CAP.downloads = r[3];
+      if (!user || !CAP.artifact) return false;
+      return Promise.all([user.isOwner().catch(function () { return false; }), user.canEdit().catch(function () { return false; })]).then(function (x) { return x[0] || x[1]; });
+    }).then(function (isAdmin) {
+      if (!isAdmin) return;
+      state.admin = true;
+      renderAll();
+      restoreDraft();
+    });
+  }
+})();
+</script>
+</body>
+</html>
