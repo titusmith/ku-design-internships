@@ -1,0 +1,1281 @@
+{
+ "about": "Watch list for the Friday scout. Group A-D rotates by ISO week number (week % 4: 0=A, 1=B, 2=C, 3=D). Broad searches run every week. Edit freely: add {name, city, kind, region, group}.",
+ "broad_searches": [
+  "graphic design intern summer 2027 Kansas City",
+  "UX design intern summer 2027 Kansas City OR Overland Park OR Lawrence",
+  "design intern summer 2027 St. Louis",
+  "design intern summer 2027 Omaha OR Lincoln OR Des Moines",
+  "UX OR product design intern summer 2027 Minneapolis",
+  "graphic design OR brand design intern summer 2027 Chicago",
+  "design intern summer 2027 Denver OR Dallas OR Oklahoma City OR Tulsa",
+  "design intern summer 2027 Milwaukee OR Madison OR Indianapolis",
+  "junior graphic designer entry level Kansas City",
+  "junior UX designer OR \"associate product designer\" new grad 2027",
+  "junior graphic designer OR \"designer I\" Midwest new grad",
+  "site:job-boards.greenhouse.io design intern 2027",
+  "site:jobs.lever.co design intern 2027",
+  "site:jobs.ashbyhq.com product design intern 2027"
+ ],
+ "companies": [
+  {
+   "name": "Hallmark",
+   "city": "Kansas City, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Garmin",
+   "city": "Olathe, KS",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Dimensional Innovations",
+   "city": "Overland Park, KS",
+   "kind": "studio",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Barkley",
+   "city": "Kansas City, MO",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "VML",
+   "city": "Kansas City, MO",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Bernstein-Rein",
+   "city": "Kansas City, MO",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Willoughby Design",
+   "city": "Kansas City, MO",
+   "kind": "studio",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Populous",
+   "city": "Kansas City, MO",
+   "kind": "studio",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Callahan",
+   "city": "Lawrence, KS",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "H&R Block",
+   "city": "Kansas City, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Oracle Health",
+   "city": "Kansas City, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "T-Mobile",
+   "city": "Overland Park, KS",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Burns & McDonnell",
+   "city": "Kansas City, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Hill's Pet Nutrition",
+   "city": "Topeka, KS",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "American Century Investments",
+   "city": "Kansas City, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Lockton",
+   "city": "Kansas City, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Kansas City Chiefs",
+   "city": "Kansas City, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Kansas City Current",
+   "city": "Kansas City, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Sporting Kansas City",
+   "city": "Kansas City, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Federal Reserve Bank of Kansas City",
+   "city": "Kansas City, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Evergy",
+   "city": "Kansas City, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Starlight Theatre",
+   "city": "Kansas City, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Unrivaled Teamwear",
+   "city": "Lenexa, KS",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Netsmart",
+   "city": "Overland Park, KS",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Veterans United Home Loans",
+   "city": "Columbia, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Sullivan Higdon & Sink",
+   "city": "Wichita, KS",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Bass Pro Shops",
+   "city": "Springfield, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "O'Reilly Auto Parts",
+   "city": "Springfield, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Jack Henry",
+   "city": "Springfield, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Walmart",
+   "city": "Bentonville, AR",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Tyson Foods",
+   "city": "Springdale, AR",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "J.B. Hunt",
+   "city": "Lowell, AR",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Anheuser-Busch",
+   "city": "St. Louis, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Nestlé Purina",
+   "city": "St. Louis, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Enterprise Mobility",
+   "city": "St. Louis, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Edward Jones",
+   "city": "St. Louis, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Build-A-Bear Workshop",
+   "city": "St. Louis, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "World Wide Technology",
+   "city": "St. Louis, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Centene",
+   "city": "St. Louis, MO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Momentum Worldwide",
+   "city": "St. Louis, MO",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "HLK",
+   "city": "St. Louis, MO",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "TOKY",
+   "city": "St. Louis, MO",
+   "kind": "studio",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Atomicdust",
+   "city": "St. Louis, MO",
+   "kind": "studio",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Paradowski Creative",
+   "city": "St. Louis, MO",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Hudl",
+   "city": "Lincoln, NE",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Archrival",
+   "city": "Lincoln, NE",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Bailey Lauerman",
+   "city": "Omaha, NE",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Swanson Russell",
+   "city": "Lincoln, NE",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Union Pacific",
+   "city": "Omaha, NE",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Mutual of Omaha",
+   "city": "Omaha, NE",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Buildertrend",
+   "city": "Omaha, NE",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "University of Nebraska Foundation",
+   "city": "Lincoln, NE",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Principal Financial Group",
+   "city": "Des Moines, IA",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Wellmark",
+   "city": "Des Moines, IA",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Dotdash Meredith",
+   "city": "Des Moines, IA",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Athene",
+   "city": "West Des Moines, IA",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Hy-Vee",
+   "city": "West Des Moines, IA",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Casey's",
+   "city": "Ankeny, IA",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Workiva",
+   "city": "Ames, IA",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Two Rivers Marketing",
+   "city": "Des Moines, IA",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Strategic America",
+   "city": "West Des Moines, IA",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "John Deere",
+   "city": "Moline, IL",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Target",
+   "city": "Minneapolis, MN",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Best Buy",
+   "city": "Richfield, MN",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "General Mills",
+   "city": "Minneapolis, MN",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "3M",
+   "city": "Maplewood, MN",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Medtronic",
+   "city": "Minneapolis, MN",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Polaris",
+   "city": "Medina, MN",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "UnitedHealth Group / Optum",
+   "city": "Minnetonka, MN",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Thomson Reuters",
+   "city": "Eagan, MN",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "U.S. Bank",
+   "city": "Minneapolis, MN",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Land O'Lakes",
+   "city": "Arden Hills, MN",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Carmichael Lynch",
+   "city": "Minneapolis, MN",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Fallon",
+   "city": "Minneapolis, MN",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Colle McVoy",
+   "city": "Minneapolis, MN",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Periscope",
+   "city": "Minneapolis, MN",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Capsule",
+   "city": "Minneapolis, MN",
+   "kind": "studio",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Space150",
+   "city": "Minneapolis, MN",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Martin Williams",
+   "city": "Minneapolis, MN",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Milwaukee Tool",
+   "city": "Brookfield, WI",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Harley-Davidson",
+   "city": "Milwaukee, WI",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Kohl's",
+   "city": "Menomonee Falls, WI",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Northwestern Mutual",
+   "city": "Milwaukee, WI",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Epic",
+   "city": "Verona, WI",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "American Family Insurance",
+   "city": "Madison, WI",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Trek Bicycle",
+   "city": "Waterloo, WI",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Lands' End",
+   "city": "Dodgeville, WI",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Baird",
+   "city": "Milwaukee, WI",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Schreiber Foods",
+   "city": "Green Bay, WI",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Leo Burnett",
+   "city": "Chicago, IL",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "FCB Chicago",
+   "city": "Chicago, IL",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Ogilvy",
+   "city": "Chicago, IL",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Energy BBDO",
+   "city": "Chicago, IL",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "VSA Partners",
+   "city": "Chicago, IL",
+   "kind": "studio",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Landor",
+   "city": "Chicago, IL",
+   "kind": "studio",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "dentsu",
+   "city": "Chicago, IL",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Havas Chicago",
+   "city": "Chicago, IL",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Morningstar",
+   "city": "Chicago, IL",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "United Airlines",
+   "city": "Chicago, IL",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "McDonald's",
+   "city": "Chicago, IL",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Kraft Heinz",
+   "city": "Chicago, IL",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Allstate",
+   "city": "Chicago, IL",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Discover",
+   "city": "Riverwoods, IL",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Motorola Solutions",
+   "city": "Chicago, IL",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Sprout Social",
+   "city": "Chicago, IL",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Grubhub",
+   "city": "Chicago, IL",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Deloitte Digital",
+   "city": "Chicago, IL",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Eli Lilly",
+   "city": "Indianapolis, IN",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Cummins",
+   "city": "Columbus, IN",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Salesforce",
+   "city": "Indianapolis, IN",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Young & Laramore",
+   "city": "Indianapolis, IN",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Procter & Gamble",
+   "city": "Cincinnati, OH",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "LPK",
+   "city": "Cincinnati, OH",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Kroger",
+   "city": "Cincinnati, OH",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "GE Appliances",
+   "city": "Louisville, KY",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Humana",
+   "city": "Louisville, KY",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Brown-Forman",
+   "city": "Louisville, KY",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Bath & Body Works",
+   "city": "Columbus, OH",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Abercrombie & Fitch",
+   "city": "New Albany, OH",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Nationwide",
+   "city": "Columbus, OH",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Ologie",
+   "city": "Columbus, OH",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Rogue Fitness",
+   "city": "Columbus, OH",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Asurion",
+   "city": "Nashville, TN",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "FedEx",
+   "city": "Memphis, TN",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "St. Jude Children's Research Hospital",
+   "city": "Memphis, TN",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Paycom",
+   "city": "Oklahoma City, OK",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Love's Travel Stops",
+   "city": "Oklahoma City, OK",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "QuikTrip",
+   "city": "Tulsa, OK",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "VI Marketing and Branding",
+   "city": "Oklahoma City, OK",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Toyota North America",
+   "city": "Plano, TX",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Southwest Airlines",
+   "city": "Dallas, TX",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "American Airlines",
+   "city": "Fort Worth, TX",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "PepsiCo / Frito-Lay",
+   "city": "Plano, TX",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Mary Kay",
+   "city": "Addison, TX",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Match Group",
+   "city": "Dallas, TX",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "AT&T",
+   "city": "Dallas, TX",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Ibotta",
+   "city": "Denver, CO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Crocs",
+   "city": "Broomfield, CO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Western Union",
+   "city": "Denver, CO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "C"
+  },
+  {
+   "name": "Children's Hospital Colorado",
+   "city": "Aurora, CO",
+   "kind": "in-house",
+   "region": "midwest",
+   "group": "D"
+  },
+  {
+   "name": "Cactus",
+   "city": "Denver, CO",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "A"
+  },
+  {
+   "name": "Sukle Advertising",
+   "city": "Denver, CO",
+   "kind": "agency",
+   "region": "midwest",
+   "group": "B"
+  },
+  {
+   "name": "Figma",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "C"
+  },
+  {
+   "name": "Google",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "D"
+  },
+  {
+   "name": "Adobe",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "A"
+  },
+  {
+   "name": "Amazon",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "B"
+  },
+  {
+   "name": "Atlassian",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "C"
+  },
+  {
+   "name": "Intuit",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "D"
+  },
+  {
+   "name": "IBM",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "A"
+  },
+  {
+   "name": "TikTok",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "B"
+  },
+  {
+   "name": "DoorDash",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "C"
+  },
+  {
+   "name": "Roblox",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "D"
+  },
+  {
+   "name": "Databricks",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "A"
+  },
+  {
+   "name": "Patreon",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "B"
+  },
+  {
+   "name": "Zillow",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "C"
+  },
+  {
+   "name": "Coinbase",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "D"
+  },
+  {
+   "name": "SeatGeek",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "A"
+  },
+  {
+   "name": "Nintendo of America",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "B"
+  },
+  {
+   "name": "Activision",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "C"
+  },
+  {
+   "name": "Palantir Technologies",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "D"
+  },
+  {
+   "name": "Sleeper",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "A"
+  },
+  {
+   "name": "Discord",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "B"
+  },
+  {
+   "name": "Pilot",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "C"
+  },
+  {
+   "name": "Stellantis",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "D"
+  },
+  {
+   "name": "General Motors",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "A"
+  },
+  {
+   "name": "Honda",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "B"
+  },
+  {
+   "name": "Under Armour",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "C"
+  },
+  {
+   "name": "Stanley Black & Decker",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "D"
+  },
+  {
+   "name": "Fossil",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "A"
+  },
+  {
+   "name": "Vertiv",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "B"
+  },
+  {
+   "name": "American Modern Insurance Group",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "C"
+  },
+  {
+   "name": "Awardco",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "D"
+  },
+  {
+   "name": "The Home Depot",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "A"
+  },
+  {
+   "name": "Kyndryl",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "B"
+  },
+  {
+   "name": "MJH Life Sciences",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "C"
+  },
+  {
+   "name": "SpaceX",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "D"
+  },
+  {
+   "name": "Snooze",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "A"
+  },
+  {
+   "name": "Labcorp",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "B"
+  },
+  {
+   "name": "Designworks",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "C"
+  },
+  {
+   "name": "Weissman",
+   "city": "",
+   "kind": "in-house",
+   "region": "national",
+   "group": "D"
+  }
+ ]
+}
