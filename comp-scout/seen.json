@@ -203,5 +203,65 @@
   "result": "rejected",
   "reason": "workplace interior design",
   "date": "2026-11-08"
+ },
+ "Design Indaba": {
+  "result": "stale",
+  "reason": "no edition after 2020 on organizer site",
+  "date": "2026-11-08"
+ },
+ "Semi Permanent": {
+  "result": "stale",
+  "reason": "latest found 2023",
+  "date": "2026-11-08"
+ },
+ "Kerning": {
+  "result": "stale",
+  "reason": "no edition after ~2019",
+  "date": "2026-11-08"
+ },
+ "TYPO Berlin": {
+  "result": "stale",
+  "reason": "no 2025+ edition",
+  "date": "2026-11-08"
+ },
+ "HOW Design Live": {
+  "result": "stale",
+  "reason": "no 2025+ edition on organizer site",
+  "date": "2026-11-08"
+ },
+ "Weapons of Mass Creation": {
+  "result": "stale",
+  "reason": "only 2010s coverage",
+  "date": "2026-11-08"
+ },
+ "Where Are the Women Designers|conference": {
+  "result": "stale",
+  "reason": "no 2025+ conference",
+  "date": "2026-11-08"
+ },
+ "Spectrum Fantastic Art Live / IlluXCon": {
+  "result": "stale",
+  "reason": "no 2025+ edition confirmed",
+  "date": "2026-11-08"
+ },
+ "DSVC|Pixelpalooza": {
+  "result": "stale",
+  "reason": "no 2025+ edition",
+  "date": "2026-11-08"
+ },
+ "CTN Animation eXpo": {
+  "result": "rejected",
+  "reason": "couldn't confirm on organizer site (blocked); Nov 19–22, 2026 per Visit Burbank; recheck",
+  "date": "2026-11-08"
+ },
+ "IxDA|Interaction conference": {
+  "result": "rejected",
+  "reason": "no 2025+ edition found on ixda.org",
+  "date": "2026-11-08"
+ },
+ "Chaumont Biennale (Le Signe)": {
+  "result": "rejected",
+  "reason": "aggregators only; recheck centrenationaldugraphisme.fr for 2027 student competition",
+  "date": "2026-11-08"
  }
 }

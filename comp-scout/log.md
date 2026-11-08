@@ -29,3 +29,8 @@ One entry per run, newest at the bottom.
 ## 2026-11-08 (board change: deadline tiers)
 - Board now supports several deadlines on one post (`tiers`). Proposed merges: National Student Show early + regular, Young Ones early + final (the second post of each is proposed for hiding). Tiers proposed for Flux, Dieline Concept & Student, Graphis New Talent, CA Photography and Red Dot Design Concept.
 - SCOUT.md updated: use tiers instead of separate posts for early/regular deadlines.
+
+## 2026-11-08 (board renamed; conferences added)
+- Board renamed "KU Design Competitions and Events"; Events tab is now "Events & Conferences"; footer links to the job board at titusmith.github.io/ku-design-internships.
+- Event rules widened to design conferences and festivals worldwide (SCOUT.md). 28 conferences suggested (17 US/Canada, 11 international), incl. Creative South, Crop (now Cleveland), Creative Works WEST (Memphis edition gone), AIGA Design Conference (no 2026/27 edition announced), ICON14 (2028), Typographics, TypeCon, Brand New, IDSA IDC, UCDA, SEGD, DesignThinkers, SIGGRAPH, Ottawa, MoCCA, LightBox, OFFF, Pictoplasma, Annecy, Animafest, ITFS, Ars Electronica, Milan, DDW, LDF, Graphic Days, ATypI.
+- To recheck: CTN eXpo (Nov 19–22, 2026, organizer site blocked), Chaumont Biennale 2027, DesignThinkers Vancouver, IxDA Interaction.
