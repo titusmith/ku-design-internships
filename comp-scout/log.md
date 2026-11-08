@@ -25,3 +25,7 @@ One entry per run, newest at the bottom.
 - Lumen Prize 2026 Student Award is closed; recheck lumenprize.org in January for 2027.
 - organizer_pages updated with the working URLs for Dieline, Motion Awards, Flux, NSSC and Lumen.
 - Titus also added Pathfinders Challenge, FigBuild and Swift Student Challenge to the board by hand.
+
+## 2026-11-08 (board change: deadline tiers)
+- Board now supports several deadlines on one post (`tiers`). Proposed merges: National Student Show early + regular, Young Ones early + final (the second post of each is proposed for hiding). Tiers proposed for Flux, Dieline Concept & Student, Graphis New Talent, CA Photography and Red Dot Design Concept.
+- SCOUT.md updated: use tiers instead of separate posts for early/regular deadlines.

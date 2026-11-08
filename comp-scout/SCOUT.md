@@ -23,6 +23,8 @@ Each listing has: `id, kind ("competition"|"event"), name, org, deadline ("YYYY-
 
 Tags are: `VISC, IXD, Illus, Anim, ID, Pkg, Ad, Type, Motion, Photo`.
 
+**Deadline tiers.** A listing may also have `tiers`: `[{"label": "Early bird", "date": "YYYY-MM-DD", "fee": "$40"}, ...]`. Use tiers whenever one competition has more than one deadline (early bird / regular / final, or price windows). Keep it as ONE listing: never create separate posts for each deadline. `deadline` is always the last tier's date. The board shows students the next tier that hasn't passed and only marks the listing closed after the last one. You can propose `tiers` in a `proposed` block like any other field (send the full list, sorted by date).
+
 ## 2. Confirm dates on existing entries (do this first)
 
 Work through live listings (`status ""`, not archived) in this order, up to about 25 per run:
@@ -39,7 +41,7 @@ For each one, open its `url` with WebFetch (or search for the organizer's curren
 "suggested_at": "<now ISO>"
 ```
 
-Only include fields that change. You may also propose `fee`, `url` or `eligibility` when the official page shows new values. If a listing already has a `proposed` block, replace it only when you have newer information.
+Only include fields that change. When an organizer shows several deadlines or price windows, propose them as `tiers` (with `deadline` set to the last one) rather than picking one date. You may also propose `fee`, `url` or `eligibility` when the official page shows new values. If a listing already has a `proposed` block, replace it only when you have newer information.
 
 If the organizer has clearly ended the program (an announcement, or no edition for two years), set `proposed: {"last_seen": <the last year it ran>}` with a note saying so. The board hides it automatically once approved.
 
