@@ -46,7 +46,7 @@
  },
  "IxDA|Interaction Awards": {
   "result": "stale",
-  "reason": "presented 2012\u20132024, no next edition announced",
+  "reason": "presented 2012–2024, no next edition announced",
   "date": "2026-11-08"
  },
  "Runway|AI Film Festival": {
@@ -57,6 +57,116 @@
  "AI-only pay-to-enter awards (International AI Award, AI Creativity Awards)": {
   "result": "rejected",
   "reason": "low-credibility pay-to-enter; skip unless Titus asks",
+  "date": "2026-11-08"
+ },
+ "https://theinspiredhomeshow.com/awards/gia-student/": {
+  "result": "suggested",
+  "reason": "added to Suggested tab",
+  "date": "2026-11-08"
+ },
+ "https://longevity.stanford.edu/design-challenge/": {
+  "result": "suggested",
+  "reason": "added to Suggested tab",
+  "date": "2026-11-08"
+ },
+ "https://2027.hci.international/submissions.html": {
+  "result": "suggested",
+  "reason": "added to Suggested tab",
+  "date": "2026-11-08"
+ },
+ "https://rotomolding.org/student-design-competition": {
+  "result": "suggested",
+  "reason": "added to Suggested tab",
+  "date": "2026-11-08"
+ },
+ "https://groups.google.com/g/asifa-hollywood-screenings/c/TsLDHFiZpNU": {
+  "result": "suggested",
+  "reason": "added to Suggested tab",
+  "date": "2026-11-08"
+ },
+ "Flexible Packaging Association|Student Flexible Packaging Design Challenge": {
+  "result": "rejected",
+  "reason": "2026 edition confirmed but fee, eligibility and 2027 dates not found; recheck flexpack.org",
+  "date": "2026-11-08"
+ },
+ "Downtown Council of Kansas City|Art in the Loop": {
+  "result": "rejected",
+  "reason": "paid public-art commission for local artists; student eligibility unclear",
+  "date": "2026-11-08"
+ },
+ "JAGDA|International Student Poster Award": {
+  "result": "rejected",
+  "reason": "fee and deadline not on organizer pages read (entry site jagda-gakusei.jp unreachable); recheck",
+  "date": "2026-11-08"
+ },
+ "Steelcase|NEXT Student Design Competition": {
+  "result": "rejected",
+  "reason": "2026 registration closed; aimed at interior design",
+  "date": "2026-11-08"
+ },
+ "KC FilmFest|Reel Spirit Competition": {
+  "result": "rejected",
+  "reason": "grades 2-9 only",
+  "date": "2026-11-08"
+ },
+ "KC FilmFest International|Heartland Student Shorts": {
+  "result": "rejected",
+  "reason": "no current call found; recheck in winter",
+  "date": "2026-11-08"
+ },
+ "KC2026|FIFA World Cup KC poster contest": {
+  "result": "rejected",
+  "reason": "one-time contest, finished",
+  "date": "2026-11-08"
+ },
+ "Parade of Hearts KC": {
+  "result": "rejected",
+  "reason": "professional public-art call",
+  "date": "2026-11-08"
+ },
+ "City of Lawrence|Unmistakable Public Art Exhibition": {
+  "result": "rejected",
+  "reason": "professional public art and sculpture call",
+  "date": "2026-11-08"
+ },
+ "Kansas City|18th & Vine mural": {
+  "result": "rejected",
+  "reason": "professional commission",
+  "date": "2026-11-08"
+ },
+ "Desall|Perfume Refill Cap Design": {
+  "result": "rejected",
+  "reason": "single-brand crowdsourcing brief",
+  "date": "2026-11-08"
+ },
+ "SIDA|Better Design Award": {
+  "result": "rejected",
+  "reason": "aggregator only; organizer page not found",
+  "date": "2026-11-08"
+ },
+ "Wichita State|Portfolio Review Day / KCAI National Portfolio Day": {
+  "result": "rejected",
+  "reason": "admissions reviews for high school students",
+  "date": "2026-11-08"
+ },
+ "Omaha Fashion Week student night": {
+  "result": "rejected",
+  "reason": "fashion, out of scope",
+  "date": "2026-11-08"
+ },
+ "WPO|WorldStar Student Awards": {
+  "result": "rejected",
+  "reason": "no dates on WPO page; recheck worldstarstudent.org",
+  "date": "2026-11-08"
+ },
+ "UNL|Open Call for Undergraduate Artists": {
+  "result": "rejected",
+  "reason": "limited to UNL students",
+  "date": "2026-11-08"
+ },
+ "AIGA DEC|Throughlines Conference": {
+  "result": "rejected",
+  "reason": "educators conference, not a student event",
   "date": "2026-11-08"
  }
 }
