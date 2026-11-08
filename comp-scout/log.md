@@ -19,3 +19,9 @@ One entry per run, newest at the bottom.
 - New suggestion (1): ACP Design of the Year (~May 22, 2027 est.). Light step 3: 4 new searches, 5 organizer pages. 6 rejected (interior design, single-school or non-US contests, AI pay-to-enter).
 - Problems: fetches to these sites timed out and need a manual check: fluxdesigncompetition.org (search shows "Flux 2026 Student Design Competition" is live; estimated Dec 4 deadline), nationalstudentshow.com (2027 cycle exists, dates unverified), tokyotypedirectorsclub.org, cqjournal.com, midwesterngdb.com, lumenprize.org, experientialdesignauthority.com, thedieline.com/awards, gdusa.com/competitions, motionawards.com.
 - Lead for next run: Aluminum Extruders Council ET27 student design competition (aec.org brochure dated Aug 2026), possible ID fit.
+
+## 2026-11-08 (follow-up with Titus's links)
+- Titus sent the right pages for sites the scout couldn't reach. 8 proposals added: Flux 2026 (Nov 14 / 21 / 29, US undergrads only), NSSC early and regular estimates moved to Jan 12 / Feb 14, 2027 with new Mar 2026–Mar 2027 eligibility, NSSC conference Apr 15–17 at Aloft downtown Dallas, Tokyo TDC 2027 closed (Aug 15 / Sept 15, 2026; next estimate Sept 15, 2027), CQ87 Jan 29, 2027 (per Titus), Dieline Concept & Student fees ($175 now, $215 by Feb 27, 2027; Holiday window ends Nov 28 vs Nov 30 conflict), Motion Awards student page link.
+- Lumen Prize 2026 Student Award is closed; recheck lumenprize.org in January for 2027.
+- organizer_pages updated with the working URLs for Dieline, Motion Awards, Flux, NSSC and Lumen.
+- Titus also added Pathfinders Challenge, FigBuild and Swift Student Challenge to the board by hand.
