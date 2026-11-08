@@ -168,5 +168,40 @@
   "result": "rejected",
   "reason": "educators conference, not a student event",
   "date": "2026-11-08"
+ },
+ "https://studentpress.org/acp/awards/contest-rules/": {
+  "result": "suggested",
+  "reason": "added to Suggested tab",
+  "date": "2026-11-08"
+ },
+ "Deutsches Studierendenwerk|AI: My Study Buddy poster competition": {
+  "result": "rejected",
+  "reason": "limited to students in Germany",
+  "date": "2026-11-08"
+ },
+ "SFSU|Student AI Awards": {
+  "result": "rejected",
+  "reason": "limited to SFSU students",
+  "date": "2026-11-08"
+ },
+ "HSE|Creative Open / deziiign AI competition": {
+  "result": "rejected",
+  "reason": "Russian university platform; not a fit, credibility unclear",
+  "date": "2026-11-08"
+ },
+ "Artiver AI Art Awards": {
+  "result": "rejected",
+  "reason": "aggregator only; AI-only pay-to-enter",
+  "date": "2026-11-08"
+ },
+ "IIDA|Student Design Competition": {
+  "result": "rejected",
+  "reason": "interior design focus",
+  "date": "2026-11-08"
+ },
+ "Work Design Magazine|NEXT Work Environment Student Competition": {
+  "result": "rejected",
+  "reason": "workplace interior design",
+  "date": "2026-11-08"
  }
 }
