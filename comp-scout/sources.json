@@ -1,0 +1,44 @@
+{
+  "gmail_label": "Competitions",
+  "searches": [
+    "student design competition {year} call for entries",
+    "student design competition {next} deadline",
+    "graphic design student award {next}",
+    "UX design student competition {next}",
+    "student animation festival {next} submissions",
+    "student illustration competition {next}",
+    "industrial design student competition {next}",
+    "student poster design competition {next}",
+    "packaging design student award {next}",
+    "Kansas City call for artists design {year}",
+    "Kansas City poster contest {year}",
+    "Lawrence Kansas call for artists {year}",
+    "Kansas City design students event {year}",
+    "AIGA Kansas City {year}",
+    "Midwest student design show {next}",
+    "portfolio review students Kansas City OR Wichita OR Omaha {next}"
+  ],
+  "pages": [
+    "https://graphiccompetitions.com/",
+    "https://studentcompetitions.com/competitions/category/design",
+    "https://www.contestwatchers.com/category/design/",
+    "https://kc.aiga.org/events/",
+    "https://www.kansascityartistscoalition.org/kcac-open-calls",
+    "https://artskcgo.com/opportunities/call-for-submissions/",
+    "https://www.kansascommerce.gov/category/arts-opportunities/call-for-artists-kac/",
+    "https://lawrenceartscenter.org/contemporary-art-exhibitions/",
+    "https://lawrenceks.gov/prc/art-grants/",
+    "https://www.kcdesignweek.org/",
+    "https://creativemornings.com/cities/kc",
+    "https://midwesterngdb.com/",
+    "https://www.hirejayhawks.com/"
+  ],
+  "local_news": [
+    "https://www2.ljworld.com/",
+    "https://www.thepitchkc.com/",
+    "https://www.kcur.org/",
+    "https://flatlandkc.org/",
+    "https://www.startlandnews.com/"
+  ],
+  "notes": "Local news sites are for site-restricted searches (e.g. site:thepitchkc.com call for artists). Instagram and Facebook can't be read; Titus forwards those."
+}

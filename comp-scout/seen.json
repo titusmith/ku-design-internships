@@ -1,0 +1,47 @@
+{
+ "Lawrence Arts Center|8x8": {
+  "result": "stale",
+  "reason": "last run 2024",
+  "date": "2026-11-08"
+ },
+ "Oklahoma Christian|Brass Ring Awards": {
+  "result": "stale",
+  "reason": "last evidence 2024",
+  "date": "2026-11-08"
+ },
+ "SILA|Illustration West": {
+  "result": "stale",
+  "reason": "IW61 ~2022, no IW62 call",
+  "date": "2026-11-08"
+ },
+ "IxDA|Student Design Charette": {
+  "result": "stale",
+  "reason": "last confirmed 2019",
+  "date": "2026-11-08"
+ },
+ "Firebelly|Camp Firebelly": {
+  "result": "stale",
+  "reason": "no recent evidence",
+  "date": "2026-11-08"
+ },
+ "Adobe|Creative Jam": {
+  "result": "rejected",
+  "reason": "campus-hosted only, no open call",
+  "date": "2026-11-08"
+ },
+ "Show Nebraska": {
+  "result": "rejected",
+  "reason": "limited to Nebraska",
+  "date": "2026-11-08"
+ },
+ "AIGA St. Louis Design Show": {
+  "result": "rejected",
+  "reason": "limited to St. Louis designers",
+  "date": "2026-11-08"
+ },
+ "City of Lawrence|Phoenix Awards artwork": {
+  "result": "rejected",
+  "reason": "professional artist commission",
+  "date": "2026-11-08"
+ }
+}
