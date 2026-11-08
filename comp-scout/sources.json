@@ -16,7 +16,11 @@
     "Kansas City design students event {year}",
     "AIGA Kansas City {year}",
     "Midwest student design show {next}",
-    "portfolio review students Kansas City OR Wichita OR Omaha {next}"
+    "portfolio review students Kansas City OR Wichita OR Omaha {next}",
+    "AI art design student award {next}",
+    "experiential design student award {next}",
+    "exhibition design student competition {next}",
+    "editorial news design student competition {next}"
   ],
   "pages": [
     "https://graphiccompetitions.com/",
@@ -49,6 +53,9 @@
     "https://motionawards.com/",
     "https://www.fastcompany.com/apply/innovation-by-design",
     "https://segd.org/awards/",
-    "https://gdusa.com/competitions"
+    "https://gdusa.com/competitions",
+    "https://snd.org/best-of-design-competitions/",
+    "https://www.experientialdesignauthority.com/",
+    "https://lumenprize.org/about-the-prize"
   ]
 }

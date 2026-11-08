@@ -48,5 +48,15 @@
   "result": "stale",
   "reason": "presented 2012\u20132024, no next edition announced",
   "date": "2026-11-08"
+ },
+ "Runway|AI Film Festival": {
+  "result": "rejected",
+  "reason": "no student category; professional AI film festival",
+  "date": "2026-11-08"
+ },
+ "AI-only pay-to-enter awards (International AI Award, AI Creativity Awards)": {
+  "result": "rejected",
+  "reason": "low-credibility pay-to-enter; skip unless Titus asks",
+  "date": "2026-11-08"
  }
 }
