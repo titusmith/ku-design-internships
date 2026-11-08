@@ -43,5 +43,10 @@
   "result": "rejected",
   "reason": "professional artist commission",
   "date": "2026-11-08"
+ },
+ "IxDA|Interaction Awards": {
+  "result": "stale",
+  "reason": "presented 2012\u20132024, no next edition announced",
+  "date": "2026-11-08"
  }
 }

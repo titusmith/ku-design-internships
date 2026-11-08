@@ -40,5 +40,15 @@
     "https://flatlandkc.org/",
     "https://www.startlandnews.com/"
   ],
-  "notes": "Local news sites are for site-restricted searches (e.g. site:thepitchkc.com call for artists). Instagram and Facebook can't be read; Titus forwards those."
+  "notes": "Local news sites are for site-restricted searches (e.g. site:thepitchkc.com call for artists). Instagram and Facebook can't be read; Titus forwards those. organizer_pages: priority competitions Titus asked to track; check each run for new dates and fees.",
+  "organizer_pages": [
+    "https://thedieline.com/awards/",
+    "https://www.printmag.com/awards/",
+    "https://societyillustrators.org/student-scholarship/",
+    "https://www.webbyawards.com/eligibility-and-guidelines/",
+    "https://motionawards.com/",
+    "https://www.fastcompany.com/apply/innovation-by-design",
+    "https://segd.org/awards/",
+    "https://gdusa.com/competitions"
+  ]
 }
