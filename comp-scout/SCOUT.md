@@ -61,6 +61,13 @@ A new **competition** must meet all of these:
 - Not already on the board or in `seen.json` (same organizer and a near-identical name, or the same URL ignoring query strings), whatever its status, dismissed included.
 - Entry fee is shown. Fees over $100 per entry are fine but need a note.
 
+**Startup- and company-backed challenges** (like Stellic's Pathfinders, Figma's FigBuild or Apple's Swift Student Challenge) are a priority: Titus considers them a big deal for students. Check every page and search in `company_challenges` each run. They count as competitions and follow the same rules, plus:
+- The company is real and identifiable (a website, a product), and the challenge has its own official page with rules.
+- There's a real prize (cash, a trip, an interview or internship path), and no entry fee.
+- Read the rules for who owns the work. If entrants give up ownership or the company can use entries commercially without paying, still suggest it, but add a note: "Rules give the company rights to entries; read before assigning it in class."
+- One-time challenges are fine if they're current, but say so in the summary ("first edition; may not repeat").
+- Campus-only hackathons that KU students can't join don't count.
+
 A new **event** must meet all of these:
 - It's for students: a portfolio review, workshop, student showcase, design week, career fair, talk series, or a conference with a student rate.
 - In person within about a half-day drive of Lawrence (KC, Wichita, Omaha, Tulsa, St. Louis, Des Moines), or online.

@@ -57,5 +57,24 @@
     "https://snd.org/best-of-design-competitions/",
     "https://www.experientialdesignauthority.com/",
     "https://lumenprize.org/about-the-prize"
-  ]
+  ],
+  "company_challenges": {
+    "note": "Startup- and company-backed student challenges. Check every run; search for new ones too.",
+    "pages": [
+      "https://www.stellic.com/pathfinders",
+      "https://figbuild2026.devpost.com/",
+      "https://developer.apple.com/swift-student-challenge/",
+      "https://devpost.com/hackathons?themes[]=Design",
+      "https://studentcompetitions.com/competitions/category/design"
+    ],
+    "searches": [
+      "startup student design challenge {next} prize",
+      "company sponsored student design challenge {year}",
+      "design-a-thon college students {next} prize",
+      "edtech student design challenge {year}",
+      "Figma student design-a-thon {next}",
+      "product design challenge university students cash prize {next}",
+      "student UX challenge sponsored by {year}"
+    ]
+  }
 }
