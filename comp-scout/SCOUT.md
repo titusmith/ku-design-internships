@@ -96,6 +96,8 @@ Build a listing with every field above, plus:
 - `deadline`: the next deadline you can confirm. If you can only infer it from last year, use last year's month and day in the coming cycle and set `deadline_est: true`. If unknown, `""`.
 - `last_seen`: the year of the most recent edition you confirmed.
 - `summary`: one to three plain sentences on what it is and why a KU student would care. No hype.
+- Put anything a student must know before entering in the `summary`, not only in `scout_notes`: rights clauses ("Heads up: the rules make every entry the property of …"), hidden costs beyond the entry fee (paid registration if accepted, travel), gated entry (chapter, school nomination, required course or membership), physical shipping, or an unposted deadline. Don't repeat the price; the cost tag shows it.
+- Keep `fee` short and lead with the current amount ("$45 per entry", "€50"); give each tier a bare amount ("$20"). The card's cost tag is built from these.
 - `eligibility`, `fee`, `free`, `where` (for local and regional), `tags`.
 - `scout_notes`: anything Titus should check, for example "Fee is high ($150)" or "Open to US students? The rules only mention the UK."
 - `found_via`: the organizer page you confirmed it on. `suggested_at`, `updated_at`: now.

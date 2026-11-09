@@ -66,3 +66,8 @@ One entry per run, newest at the bottom.
 - Not moved, noted for Titus: Webby ($105–115, final date unknown), UX Design Awards card mixes the Nov 15 deadline with "spring 2027 cycle", Stellic card names a KU student winner, CreativeMornings shows only the Nov 20 talk.
 - Auto-hidden already (confirmed before 2025): Illustration West, Brass Ring, Camp Firebelly, Adobe Creative Jam, IxDA Charette, Lawrence Arts Center 8x8.
 - No link check was run.
+
+## 2026-11-09 (board updates from Titus's comments)
+- Cost tag redesigned: green outline only, $ to $$$$ by price ($ free/≤$25, $$ 26–50, $$$ 51–99, $$$$ 100+), shows "$X before DATE" during early-bird windows and updates itself; the separate "Then …" tier chip was removed. Fees refreshed for Young Ones, Graphis, Tokyo TDC, D&AD, CA Design, CA Photo, SEGD. 35 cards show "See site" (no posted student price).
+- Student-facing caveats added to summaries: Rick Merluzzi (rights), HCI (paid registration if accepted), NSAC (AAF chapter), ACP (member outlet), AICC (packaging course, sample + video), PPA (read rules packet), RESNA (finalist travel), GLITCH (deadline TBA), gia (ID program only), DesignThinkers (Student RGD membership).
+- SCOUT.md: caveats go in the summary; keep fee strings short.
