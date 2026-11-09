@@ -58,7 +58,7 @@ One entry per run, newest at the bottom.
 - Publish needed four tries because Titus was approving cards at the same time; merged onto his latest version each time.
 
 ## 2026-11-09 (pre-share audit for Titus)
-- Reviewed all 113 student-visible cards. Moved 18 back to Suggested with an "Audit flag" note:
+- Reviewed all 108 student-visible cards. Moved 18 back to Suggested with an "Audit flag" note:
   - High fees (>$100/entry): Indigo, Annie Awards, Motion Awards, Dieline, Red Dot Concept, GDUSA AGDA / Digital / Package.
   - Hidden costs or gated entry: HCI International (paid registration if accepted), NSAC (needs AAF chapter), ACP Design of the Year (needs ACP-member student outlet).
   - Weak sourcing or unverified rules: AEF Student Animation Showcase (Google Groups only), PPA challenge, TDK Awards (last confirmed 2025), AIGA Design Conference (no edition announced), Wege Prize (estimate, two-school teams), St. Louis Design Week (organizer unclear).
