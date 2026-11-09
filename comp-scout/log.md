@@ -47,3 +47,8 @@ One entry per run, newest at the bottom.
 - Rejected 17, stale 1: mostly engineering/architecture/interior contests, single-school or pre-college programs, aggregator-only leads.
 - Problems: fetches failed for nationalstudentshow.com, developer.apple.com Swift page, designawards.core77.com, aec.org rules page, devpost design hackathons, stellic.com/pathfinders. No Gmail connector; add_repo tool not available (repo was already cloned).
 - Lead for next run: Monoline Design Awards 2026 (studentcompetitions) needs an organizer page check. GDUSA student fee may be $95 rather than $120.
+
+## 2026-11-09 (Titus's colleague leads)
+- Already on board: National Student Show (and conference, Apr 15–17, 2027 confirmed), KC ADDYs (2026 student winners page; 2027 call unchanged), AIGA KC Design Awards (proposed URL kc.aiga.org/a-awards/; program is branded A-Awards, last edition A20 2025).
+- New suggestions (2): GLITCH National Student Design Competition (Mississippi State; 2027 call open on Submittable, $10/entry, deadline not stated, likely January), TDK Awards (The Design Kids; last confirmed 2025, 2027 waitlist only).
+- Organizer pages added to sources.json: GLITCH Submittable, TDK awards, AIGA KC A-Awards.

@@ -388,5 +388,15 @@
   "result": "rejected",
   "reason": "paid summer type program, not a conference",
   "date": "2026-11-09"
+ },
+ "https://msuart.submittable.com/submit/346136/glitch-graphic-design-student-competition-2026": {
+  "result": "suggested",
+  "reason": "GLITCH National Student Design Competition (colleague lead)",
+  "date": "2026-11-09"
+ },
+ "https://thedesignkids.org/awards": {
+  "result": "suggested",
+  "reason": "TDK Awards (colleague lead)",
+  "date": "2026-11-09"
  }
 }
