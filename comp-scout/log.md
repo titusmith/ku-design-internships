@@ -52,3 +52,7 @@ One entry per run, newest at the bottom.
 - Already on board: National Student Show (and conference, Apr 15–17, 2027 confirmed), KC ADDYs (2026 student winners page; 2027 call unchanged), AIGA KC Design Awards (proposed URL kc.aiga.org/a-awards/; program is branded A-Awards, last edition A20 2025).
 - New suggestions (2): GLITCH National Student Design Competition (Mississippi State; 2027 call open on Submittable, $10/entry, deadline not stated, likely January), TDK Awards (The Design Kids; last confirmed 2025, 2027 waitlist only).
 - Organizer pages added to sources.json: GLITCH Submittable, TDK awards, AIGA KC A-Awards.
+
+## 2026-11-09 (AICC brochure from Titus)
+- AICC suggestion updated from the 2027 brochure: renamed "AICC Student Packaging Design Competition"; Sweet Candy Company 3-sided corrugated floor display brief; Structure and Graphics categories, $1,000/$750/$500 each; first place gets a trip to the AICC Fall Meeting in Boston (Sept 13–15, 2027); undergrads in a packaging course only; physical sample and video essay due May 28, 2027; no rights clause. Free; ICPF gives $500 per entering school.
+- Publish needed four tries because Titus was approving cards at the same time; merged onto his latest version each time.
