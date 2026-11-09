@@ -263,5 +263,130 @@
   "result": "rejected",
   "reason": "aggregators only; recheck centrenationaldugraphisme.fr for 2027 student competition",
   "date": "2026-11-08"
+ },
+ "https://aec.org/design-competition": {
+  "result": "suggested",
+  "reason": "Rick Merluzzi Aluminum Extrusion Design Competition (Student)",
+  "date": "2026-11-09"
+ },
+ "https://wegeprize.squarespace.com/faq": {
+  "result": "suggested",
+  "reason": "Wege Prize",
+  "date": "2026-11-09"
+ },
+ "https://www.paperboardpackaging.org/student-design-challenge": {
+  "result": "suggested",
+  "reason": "Paperboard Packaging Alliance Student Design Challenge",
+  "date": "2026-11-09"
+ },
+ "https://aiccbox.org/news-events/competitions/student-design-competition/": {
+  "result": "suggested",
+  "reason": "AICC / ICPF Student Design Competition",
+  "date": "2026-11-09"
+ },
+ "https://www.pixiv.net/contest/usstudent2025": {
+  "result": "suggested",
+  "reason": "pixiv US Student Illustration Contest",
+  "date": "2026-11-09"
+ },
+ "https://www.resna.org/Events/RESNA-2027-Conference/2027-Student-Design-Challenge": {
+  "result": "suggested",
+  "reason": "RESNA Student Design Challenge",
+  "date": "2026-11-09"
+ },
+ "https://stlorg.squarespace.com/stldesignweek": {
+  "result": "suggested",
+  "reason": "St. Louis Design Week",
+  "date": "2026-11-09"
+ },
+ "https://luma.com/r4wzlr41": {
+  "result": "rejected",
+  "reason": "Protothon UX hackathon: past event, no dates/prizes/rules page",
+  "date": "2026-11-09"
+ },
+ "ThermaLabs|BREEZE Engineering Challenge": {
+  "result": "rejected",
+  "reason": "aggregator only; engineering, no organizer rules page",
+  "date": "2026-11-09"
+ },
+ "BeMyApp/IBM SkillsBuild|AI Builders Challenge North America": {
+  "result": "rejected",
+  "reason": "AI software building, not design",
+  "date": "2026-11-09"
+ },
+ "https://studentcompetitions.com/competitions/autodesk-designathon-2026": {
+  "result": "rejected",
+  "reason": "closed July 2026; no organizer page found",
+  "date": "2026-11-09"
+ },
+ "https://spline.design/hana-challenge": {
+  "result": "rejected",
+  "reason": "one-off Spline x Contra challenge; no year/eligibility, not student-specific",
+  "date": "2026-11-09"
+ },
+ "https://internationalmoldedfiberassociation.growthzoneapp.com/student-competition-2026": {
+  "result": "rejected",
+  "reason": "limited to packaging/paper science programs",
+  "date": "2026-11-09"
+ },
+ "EDPA Midwest|Design Challenge (Carthage College)": {
+  "result": "rejected",
+  "reason": "limited to Carthage College seniors; latest 2024",
+  "date": "2026-11-09"
+ },
+ "Stellantis|Drive for Design": {
+  "result": "rejected",
+  "reason": "not verified on organizer page; aimed at high school",
+  "date": "2026-11-09"
+ },
+ "Wilfrid Laurier|UX Design for Change Challenge": {
+  "result": "stale",
+  "reason": "latest organizer page 2024; likely Canada-only",
+  "date": "2026-11-09"
+ },
+ "https://studentcompetitions.com/competitions/monoline-design-awards-2026": {
+  "result": "rejected",
+  "reason": "aggregator only; organizer page not checked yet",
+  "date": "2026-11-09"
+ },
+ "https://futureroo.umkc.edu/register/designdiscovery26": {
+  "result": "rejected",
+  "reason": "UMKC Design Discovery is pre-college outreach",
+  "date": "2026-11-09"
+ },
+ "Mouser/Tech Briefs|Create the Future Design Contest": {
+  "result": "rejected",
+  "reason": "engineering product contest",
+  "date": "2026-11-09"
+ },
+ "MBMA|Student Design Competition": {
+  "result": "rejected",
+  "reason": "metal building architecture",
+  "date": "2026-11-09"
+ },
+ "NKBA|Student Design Competition": {
+  "result": "rejected",
+  "reason": "kitchen and bath interior design",
+  "date": "2026-11-09"
+ },
+ "cootermag|Global Student Design Challenge 2026": {
+  "result": "rejected",
+  "reason": "aggregator lead only; organizer unclear",
+  "date": "2026-11-09"
+ },
+ "AIGA KC|Design Hotline / Drink and Draw / Character Development": {
+  "result": "rejected",
+  "reason": "one-off professional chapter events",
+  "date": "2026-11-09"
+ },
+ "https://www.port.ac.uk/graduate-show-design-competition-2027": {
+  "result": "rejected",
+  "reason": "University of Portsmouth internal",
+  "date": "2026-11-09"
+ },
+ "TypeParis": {
+  "result": "rejected",
+  "reason": "paid summer type program, not a conference",
+  "date": "2026-11-09"
  }
 }

@@ -38,3 +38,12 @@ One entry per run, newest at the bottom.
 ## 2026-11-08 (audit)
 - No live duplicates. The two merged posts (NSS regular, Young Ones final) are hidden. Shared URLs (CA portal, GDUSA students page) are separate competitions.
 - Fixed stale card text to match what was confirmed: Flux, GDUSA AGDA (closes Nov 13; entry-platform link), GDUSA Digital fee, Tokyo TDC, Config. SEGD now has estimated tiers (Jan 31 / Feb 28 / Mar 15). AIGA Wichita renamed Student Portfolio Forum with wichita.aiga.org link. IDSA Student Merit link updated.
+
+## 2026-11-09 (scheduled run)
+- Board loaded: 108 listings, all approved (no pending suggestions or proposals).
+- Dates checked: 18 of 25 targeted (estimated and blank-date listings). 2 proposals: Society of Illustrators scholarship (2027 call opens Jan 2027; fees $15 / $10 members), HCI International 2027 confirmed (Berlin, Jul 25–30; student competition deadlines not out). No 2027 dates posted yet for NSS, GDUSA Digital, SEGD, Core77, IDEA, SND, Webby final, AIGA Design Conference (no 2026 edition), ATypI, Portfolio Night, Swift, FigBuild, Creative Conscience, 3x3, PRINT. SIGGRAPH 2027 location/dates conflict across aggregators (LA Jul 19–23 vs Anaheim Aug 8–12); no s2027 page yet.
+- Not reached this run (budget): KCAC undergrad show, AIGA KC Portfolio Day, SPD-U, IDSA Merit, TDC scholarships, Midwestern GDB, EXSYS.
+- New suggestions (7): Rick Merluzzi Aluminum Extrusion Design Competition (Mar 22, 2027; rights clause), RESNA Student Design Challenge (Jan 22, 2027), AICC/ICPF Student Design Competition (May 28, 2027), pixiv US Student Illustration Contest (~Mar 24, 2027 est.; last confirmed 2025), PPA Paperboard Student Design Challenge (date not posted), Wege Prize (~Oct 4, 2027 est. for 2028 cycle), St. Louis Design Week (~Oct 4, 2027 est.).
+- Rejected 17, stale 1: mostly engineering/architecture/interior contests, single-school or pre-college programs, aggregator-only leads.
+- Problems: fetches failed for nationalstudentshow.com, developer.apple.com Swift page, designawards.core77.com, aec.org rules page, devpost design hackathons, stellic.com/pathfinders. No Gmail connector; add_repo tool not available (repo was already cloned).
+- Lead for next run: Monoline Design Awards 2026 (studentcompetitions) needs an organizer page check. GDUSA student fee may be $95 rather than $120.
