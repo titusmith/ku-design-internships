@@ -56,3 +56,13 @@ One entry per run, newest at the bottom.
 ## 2026-11-09 (AICC brochure from Titus)
 - AICC suggestion updated from the 2027 brochure: renamed "AICC Student Packaging Design Competition"; Sweet Candy Company 3-sided corrugated floor display brief; Structure and Graphics categories, $1,000/$750/$500 each; first place gets a trip to the AICC Fall Meeting in Boston (Sept 13–15, 2027); undergrads in a packaging course only; physical sample and video essay due May 28, 2027; no rights clause. Free; ICPF gives $500 per entering school.
 - Publish needed four tries because Titus was approving cards at the same time; merged onto his latest version each time.
+
+## 2026-11-09 (pre-share audit for Titus)
+- Reviewed all 113 student-visible cards. Moved 18 back to Suggested with an "Audit flag" note:
+  - High fees (>$100/entry): Indigo, Annie Awards, Motion Awards, Dieline, Red Dot Concept, GDUSA AGDA / Digital / Package.
+  - Hidden costs or gated entry: HCI International (paid registration if accepted), NSAC (needs AAF chapter), ACP Design of the Year (needs ACP-member student outlet).
+  - Weak sourcing or unverified rules: AEF Student Animation Showcase (Google Groups only), PPA challenge, TDK Awards (last confirmed 2025), AIGA Design Conference (no edition announced), Wege Prize (estimate, two-school teams), St. Louis Design Week (organizer unclear).
+  - Rights: Rick Merluzzi aluminum extrusion (ET Foundation owns entries; student card didn't say so).
+- Not moved, noted for Titus: Webby ($105–115, final date unknown), UX Design Awards card mixes the Nov 15 deadline with "spring 2027 cycle", Stellic card names a KU student winner, CreativeMornings shows only the Nov 20 talk.
+- Auto-hidden already (confirmed before 2025): Illustration West, Brass Ring, Camp Firebelly, Adobe Creative Jam, IxDA Charette, Lawrence Arts Center 8x8.
+- No link check was run.
