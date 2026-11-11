@@ -72,3 +72,8 @@ One entry per run, newest at the bottom.
 - Student-facing caveats added to summaries: Rick Merluzzi (rights), HCI (paid registration if accepted), NSAC (AAF chapter), ACP (member outlet), AICC (packaging course, sample + video), PPA (read rules packet), RESNA (finalist travel), GLITCH (deadline TBA), gia (ID program only), DesignThinkers (Student RGD membership).
 - SCOUT.md: caveats go in the summary; keep fee strings short.
 - NSAC restored: KU Ad Club (journalism school, ties to AAF KC chapter) is the entry route. ACP Design of the Year restored: Titus confirmed the University Daily Kansan is an ACP member; summary says to enter through the Kansan.
+
+## 2026-11-11 (colleague lists: illustration/animation + design professors)
+- Already on board: SoI student scholarship/show, National Student Show (Dallas), AIGA KC A-Awards, SIGGRAPH (CAF + conference), Creative Quarterly, 3x3, CA Illustration, Young Ones (ADC/TDC), Applied Arts, Communication Arts, GLITCH, ADDYs, Midwestern GDB, TDK, TDC scholarships.
+- New suggestions (6): American Illustration (~Mar 5, 2027 est.), Infected By Art Vol. 15 (~Dec 8, 2026 est.), Bologna Illustrators Exhibition (~Oct 31, 2027 est.), SXSW animated shorts (2028-cycle tiers est.), KU LibArt (~Apr 6, 2027 est.), KU Tensie Awards (date TBA). Illustration West updated from stale (IW65 2026 confirmed) and moved to Suggested.
+- Not added: KC Ad Club scholarship (no work submission/deadline posted), TDC student comp (goes through Young Ones), Concept Art Awards (no open student call), AIAS Creators Ball (unidentified), ICON Motion Commotion (next ICON 2028), Collective Arts (call closed since 2023), World Illustration Awards (organizer site unreachable; recheck).

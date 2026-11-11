@@ -10,9 +10,9 @@
   "date": "2026-11-08"
  },
  "SILA|Illustration West": {
-  "result": "stale",
-  "reason": "IW61 ~2022, no IW62 call",
-  "date": "2026-11-08"
+  "result": "suggested",
+  "reason": "IW65 (2026) confirmed; card updated from stale",
+  "date": "2026-11-11"
  },
  "IxDA|Student Design Charette": {
   "result": "stale",
@@ -398,5 +398,70 @@
   "result": "suggested",
   "reason": "TDK Awards (colleague lead)",
   "date": "2026-11-09"
+ },
+ "https://www.ai-ap.com/cfe/fees": {
+  "result": "suggested",
+  "reason": "American Illustration (colleague list)",
+  "date": "2026-11-11"
+ },
+ "https://www.infectedbyart.com/contests.asp": {
+  "result": "suggested",
+  "reason": "Infected By Art (colleague list)",
+  "date": "2026-11-11"
+ },
+ "Bologna Children's Book Fair|Illustrators Exhibition": {
+  "result": "suggested",
+  "reason": "colleague list",
+  "date": "2026-11-11"
+ },
+ "https://sxsw.com/deadlines/": {
+  "result": "suggested",
+  "reason": "SXSW animated shorts (colleague list)",
+  "date": "2026-11-11"
+ },
+ "https://lib.ku.edu/libart": {
+  "result": "suggested",
+  "reason": "KU LibArt (colleague list)",
+  "date": "2026-11-11"
+ },
+ "https://film.ku.edu/student-work": {
+  "result": "suggested",
+  "reason": "KU Tensies (colleague list)",
+  "date": "2026-11-11"
+ },
+ "KC Ad Club|Foundation Scholarship": {
+  "result": "rejected",
+  "reason": "scholarship for ad/marketing sophomores-juniors at listed KC schools; no work submission or posted deadline; latest dated 2023-24",
+  "date": "2026-11-11"
+ },
+ "TDC|student competition": {
+  "result": "rejected",
+  "reason": "duplicate: TDC student entries go through Young Ones TDC",
+  "date": "2026-11-11"
+ },
+ "Concept Art Association|Concept Art Awards": {
+  "result": "rejected",
+  "reason": "industry awards; no open student call on organizer page",
+  "date": "2026-11-11"
+ },
+ "AIAS Creators Ball": {
+  "result": "rejected",
+  "reason": "could not identify; ask the professor",
+  "date": "2026-11-11"
+ },
+ "ICON|Motion Commotion": {
+  "result": "rejected",
+  "reason": "screening at ICON (biennial); next ICON14 ~2028",
+  "date": "2026-11-11"
+ },
+ "Collective Arts|Call for Art": {
+  "result": "stale",
+  "reason": "contest not available; last dated Series 25 (2023); $250 one-time, broad license",
+  "date": "2026-11-11"
+ },
+ "AOI|World Illustration Awards": {
+  "result": "rejected",
+  "reason": "organizer site unreachable; 2026 edition seen only via aggregators (closed Feb 17, 2026); recheck",
+  "date": "2026-11-11"
  }
 }
