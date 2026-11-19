@@ -16,3 +16,11 @@ One entry per Friday run, newest at the bottom.
 - Skipped, not recorded (no employer page found; retry next week): State Farm Summer 2027 UX Designer intern, Minnesota Star Tribune UX Internship Summer 2027 (2nd week), Workiva Spring/Summer 2027 Brand Design intern, Learning Resources Junior Graphic Designer.
 - Group-C watch list was mostly quiet: no design postings found for Willoughby, Sporting KC, Oracle Health, American Century, Enterprise, Centene, Atomicdust, Bailey Lauerman, Buildertrend, Medtronic, U.S. Bank, Colle McVoy, Martin Williams, Northwestern Mutual (2027 UX not yet posted), Southwest, Western Union.
 - Board published cleanly (Version 123), no conflict. Public index.html unchanged (only queue items added).
+
+## 2026-11-19 (Thu, ISO week 47 → group D)
+- Job boards: The Brand Identity (https://the-brandidentity.com/jobs) could NOT be checked — the fetch was blocked because its permission prompt went unanswered in this unattended run. No roles read from it.
+- Searches: 32 WebSearch (14 broad + 14 group-D company combos + 4 employer-page lookups).
+- Candidates looked at: 36 fetch attempts (12 failed or showed no content). Suggested: 3 (Mortenson, T-Mobile, Kettle). Rejected: 19 (recorded in seen.json).
+- Top reject reasons: term past / Summer 2026 or older (One Design Co, Smartly, Walker Sands, Paradowski, m+a, GoFundMe, Carta, Capsule); no longer live (Workshop 2027, Ogilvy x2, AbelsonTaylor, Circa); not a design role (Polaris engineering/operations, Prophet media); not for undergrads (Prophet Design Intern); stale (Swanson Russell 2019 posting).
+- Skipped, not recorded (retry next week): Nationwide UX Designer Internship Summer 2027 (no employer page found); O'Reilly UX Designer I, Ogilvy greenhouse 4634007005, Sporting KC Graphic Designer (teamworkonline 2189632), Gravis Robotics Design Internship, Polaris R31548/R31550/R31551/R31552 (one may be a CMF & Graphics intern) — fetch failed; Edward Jones 23843475/23843479 (page rendered no content); Wayground/Skillet Product Design Intern (no location/term/pay stated); defense-tech 2027 Early Career Associate Product Designer, Costa Mesa (ixdf, employer hidden); Minnesota Star Tribune UX Summer 2027 (3rd week, no employer page).
+- Board published cleanly (Version 140), no conflict. Public index.html unchanged (only queue items added).
