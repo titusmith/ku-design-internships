@@ -18,10 +18,21 @@ Every listing counts for duplicate checks, whatever its `status` (`""` = publish
 
 ## 2. Decide what to check this week
 
+- Check every board in `job_boards` (in `scout/watchlist.json`) every week, as described below.
 - Run every query in `broad_searches`.
 - Check the companies whose `group` matches this week: ISO week number % 4 → 0 = A, 1 = B, 2 = C, 3 = D.
 - To save searches, combine 2–3 companies from the same city into one search, for example `Barkley OR VML OR "Bernstein-Rein" design intern 2027`. Keep it to about 30 searches in total.
 - Use WebSearch to find postings, and WebFetch only on URLs that searches return. Prefer the employer's own posting page (their careers site, Workday, Greenhouse, Lever, Ashby, iCIMS and so on) over aggregators. Aggregators (LinkedIn, Indeed, Built In, Handshake mirrors) are fine as leads, but find the employer's page for the link. If you can't, skip the posting.
+
+### Job boards checked every week
+
+Titus asked for these boards to be checked on every run, on top of the rotating watch list. Each entry in `job_boards` gives a `url` and `notes`.
+
+1. WebFetch the board's listing page and get every role on it. A board's listing page is a source in its own right, so fetching it and the role pages it links to is allowed.
+2. Skip roles that obviously fail before opening them: Mid-weight, Senior, Lead, Director or Creative Director level; non-design roles (strategy, business development, production management); and roles located only outside the United States.
+3. Open every remaining role's detail page. That usually means Intern and Junior levels, plus US or "Remote – anywhere" roles at an unclear level. Screen it with the rules in step 3.
+4. For `link_url`, use the employer's own posting if the detail page links to one. Otherwise, the board's own detail page for that role is fine. It counts as the specific posting, unlike the aggregators above.
+5. Set `found_via` to name the board, for example `"Found Nov 20 on The Brand Identity jobs board"`.
 
 ## 3. Screen each candidate
 
@@ -32,7 +43,7 @@ Otherwise, open the posting and decide. The candidate must meet all of these.
 **For internships (`job_type: "Internship"`):**
 - It's a design role: graphic, brand, visual, packaging, motion, illustration, UX, UI, product, interaction or web/app design, or design research. It's not marketing, product management, engineering or sales.
 - It's paid. If no pay is stated, it can still go in, with a note asking Titus to confirm it's paid.
-- It's in the United States.
+- It's in the United States, or it's remote and open to people in the US. "Remote – anywhere" counts, but add a note asking Titus to confirm US students can take it. Also add a note if the pay isn't in US dollars.
 - It's open to undergraduates, and realistically to sophomores or juniors (seniors are fine too).
 - It's for an upcoming term (Spring 2027, Summer 2027, Fall 2027, or year-round starting 2027). It's not past, and the deadline hasn't passed.
 
@@ -40,7 +51,7 @@ Otherwise, open the posting and decide. The candidate must meet all of these.
 - It's a design role (same list as above).
 - It needs no more than 2 years of experience. 1–3 years is borderline: include it with a note. 3+ years: skip it.
 - It doesn't have a Senior, Lead, Manager, Principal, Staff or Director title.
-- It's in the United States, and the deadline hasn't passed.
+- It's in the United States, or it's remote and open to people in the US (same notes as for internships), and the deadline hasn't passed.
 
 **For both:**
 - The link is to that specific posting, not a general careers page or a sign-in page.

@@ -1,5 +1,12 @@
 {
- "about": "Watch list for the Friday scout. Group A-D rotates by ISO week number (week % 4: 0=A, 1=B, 2=C, 3=D). Broad searches run every week. Edit freely: add {name, city, kind, region, group}.",
+ "about": "Watch list for the Friday scout. Group A-D rotates by ISO week number (week % 4: 0=A, 1=B, 2=C, 3=D). Broad searches run every week. Edit freely: add {name, city, kind, region, group}. job_boards are checked every week.",
+ "job_boards": [
+  {
+   "name": "The Brand Identity",
+   "url": "https://the-brandidentity.com/jobs",
+   "notes": "Added by Titus on Nov 19, 2026. A global brand/design jobs board: about 20–25 roles at a time, mostly in Europe and mostly mid or senior. Each role shows Level (Intern, Junior, Mid-weight, Senior, Director), location and contract type. Role pages are at /jobs/roles/<company>/<role>, and their Apply button stays on the site. Expect only a handful of US or remote junior and intern roles."
+  }
+ ],
  "broad_searches": [
   "graphic design intern summer 2027 Kansas City",
   "UX design intern summer 2027 Kansas City OR Overland Park OR Lawrence",
