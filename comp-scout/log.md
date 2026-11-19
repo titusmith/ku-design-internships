@@ -85,3 +85,7 @@ One entry per run, newest at the bottom.
 - New suggestions (4): NACD Student Design Competition (Jan 31, 2027; fee wording contradicts itself), Formica FORM Student Innovation Competition (Feb 19, 2027; rules PDF unread), Asia Design Prize student (Dec 2 / Dec 30, 2026; $185 finalist fee), IAC27 Information Architecture Conference (Apr 14–17, 2027, Philadelphia).
 - Rejected 5: Graphis UnMuted (2026 closed, no next edition), Brighton Animation Festival (no dates on organizer page), plus aggregator-only or non-design leads.
 - Problems: WebFetch refuses URLs that haven't come up in a search this session, so organizer pages had to be found by search first; this cut the number of pages checked. add_repo tool not available (repo already cloned). No Gmail connector.
+
+## 2026-11-19 (Titus's link)
+- Board had 127 listings; all of the Nov 16 suggestions and proposals had been approved.
+- Added RGD Branding Awards 2027 to Suggested: Student division; tiers Dec 14, 2026 (CA$60) / Jan 15, 2027 (CA$75) / Jan 29, 2027 (CA$90) for Student RGD members; non-member students pay CA$95–150; +13% tax. Open questions: whether non-Canadian students can enter, and who owns entries (FAQ not read).
