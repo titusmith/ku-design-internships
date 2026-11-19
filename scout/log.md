@@ -29,3 +29,7 @@ One entry per Friday run, newest at the bottom.
 - Job boards: The Brand Identity (https://the-brandidentity.com/jobs) was blocked again. WebFetch returned PROVENANCE_REQUIRED because the fetch permission prompt for that site went unanswered. No roles read. I didn't retry or try any workaround.
 - Searches: 0 new. The full group-D and broad search set ran earlier today (see entry above), so a second identical pass would have repeated the same results. Every candidate rejected earlier today is already in seen.json.
 - Board: re-read and unchanged since this morning's publish (Version 140). No new suggestions, nothing published, and index.html is unchanged.
+
+## 2026-11-19 (Thu, by hand in Titus's chat)
+- The Brand Identity checked by hand after the scheduled run couldn't open it: 23 roles. Suggested 1 (.raw Digital Design Internship: remote, € pay, closes Dec 2). Rejected Little Plains Product Designer and Digital Brand Designer (tagged Junior but need 3–5 and 4–7 yrs). The rest are mid, senior or director level, or outside the US.
+- SCOUT.md updated: reach job boards through WebSearch first, so unattended runs can open them.

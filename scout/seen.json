@@ -310,5 +310,25 @@
   "decision": "suggested",
   "reason": "",
   "date": "2026-11-19"
+ },
+ "https://the-brandidentity.com/jobs/roles/raw/digital-design-internship-15521189": {
+  "company": ".raw",
+  "title": "Digital Design Internship",
+  "decision": "suggested",
+  "date": "2026-11-19"
+ },
+ "https://the-brandidentity.com/jobs/roles/little-plains/product-designer-15180118": {
+  "company": "Little Plains",
+  "title": "Product Designer",
+  "decision": "rejected",
+  "reason": "tagged Junior but needs 3–5 yrs",
+  "date": "2026-11-19"
+ },
+ "https://the-brandidentity.com/jobs/roles/little-plains/digital-brand-designer-15179727": {
+  "company": "Little Plains",
+  "title": "Digital Brand Designer",
+  "decision": "rejected",
+  "reason": "tagged Junior but needs 4–7 yrs",
+  "date": "2026-11-19"
  }
 }

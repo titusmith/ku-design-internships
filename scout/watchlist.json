@@ -4,7 +4,12 @@
   {
    "name": "The Brand Identity",
    "url": "https://the-brandidentity.com/jobs",
-   "notes": "Added by Titus on Nov 19, 2026. A global brand/design jobs board: about 20–25 roles at a time, mostly in Europe and mostly mid or senior. Each role shows Level (Intern, Junior, Mid-weight, Senior, Director), location and contract type. Role pages are at /jobs/roles/<company>/<role>, and their Apply button stays on the site. Expect only a handful of US or remote junior and intern roles."
+   "notes": "Added by Titus on Nov 19, 2026. A global brand/design jobs board: about 20–25 roles at a time, mostly in Europe and mostly mid or senior. Each role shows Level (Intern, Junior, Mid-weight, Senior, Director), location and contract type. Role pages are at /jobs/roles/<company>/<role>, and their Apply button stays on the site. Expect only a handful of US or remote junior and intern roles.",
+   "search": [
+    "site:the-brandidentity.com jobs",
+    "site:the-brandidentity.com/jobs/roles intern OR junior",
+    "the brand identity jobs board design intern"
+   ]
   }
  ],
  "broad_searches": [

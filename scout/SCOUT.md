@@ -28,7 +28,7 @@ Every listing counts for duplicate checks, whatever its `status` (`""` = publish
 
 Titus asked for these boards to be checked on every run, on top of the rotating watch list. Each entry in `job_boards` gives a `url` and `notes`.
 
-1. WebFetch the board's listing page and get every role on it. A board's listing page is a source in its own right, so fetching it and the role pages it links to is allowed.
+1. Reach the board through search first. Unattended runs can't open a page that no search has returned, because nobody is there to approve it. Run WebSearch for the board's `search` queries (for example `site:the-brandidentity.com jobs`, and `site:the-brandidentity.com/jobs/roles intern OR junior`). Then WebFetch the listing page, or any role pages, from those results, and get every role on it. If the listing page still can't be opened, screen the role pages that searches return, and say so in the log.
 2. Skip roles that obviously fail before opening them: Mid-weight, Senior, Lead, Director or Creative Director level; non-design roles (strategy, business development, production management); and roles located only outside the United States.
 3. Open every remaining role's detail page. That usually means Intern and Junior levels, plus US or "Remote – anywhere" roles at an unclear level. Screen it with the rules in step 3.
 4. For `link_url`, use the employer's own posting if the detail page links to one. Otherwise, the board's own detail page for that role is fine. It counts as the specific posting, unlike the aggregators above.
