@@ -1199,5 +1199,27 @@ footer{border-top:1px solid var(--border);background:var(--ku-gray);color:#A6A6A
 })();
 </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "2255550df5db4e38bcc2ffc087469199"}'></script>
+<script data-goatcounter="https://titusmith.goatcounter.com/count" data-goatcounter-settings='{"no_onload": true}' async src="https://gc.zgo.at/count.js"></script>
+<script>
+(function () {
+  var byLink = null;
+  function lookup() {
+    if (byLink) return byLink; byLink = {};
+    try { JSON.parse(document.getElementById('board-data').textContent).listings.forEach(function (l) {
+      if (l.link_url) byLink[l.link_url] = l; if (l.apply_email) byLink['mailto:' + l.apply_email] = l; }); } catch (e) {}
+    return byLink;
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null; if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (!/^(https?:|mailto:)/i.test(href) || /goatcounter|cloudflareinsights/.test(href)) return;
+    var l = lookup()[href] || lookup()[href.split('?')[0]];
+    if (!l) return;
+    var kind = /^mailto:/i.test(href) ? 'email' : 'posting';
+    try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({
+      path: kind + '/' + l.id, title: l.company + ': ' + l.role_title + (kind === 'email' ? ' (email)' : ''), event: true }); } catch (e) {}
+  }, true);
+})();
+</script>
 </body>
 </html>
