@@ -19,6 +19,20 @@ before = len(d.get("listings", []))
 d["listings"] = [l for l in d.get("listings", []) if not l.get("status")]
 body = json.dumps(d, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
 page = s[:m.start(2)] + body + s[m.end(2):]
+
+# Visitor analytics for the public copy only (never added to the board on claude.ai).
+# Set the token in tools/site_config.json -> {"cloudflare_token": "..."}; leave it empty to turn analytics off.
+import os
+cfg_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "site_config.json")
+try:
+    token = json.load(open(cfg_path, encoding="utf-8")).get("cloudflare_token", "").strip()
+except (FileNotFoundError, ValueError):
+    token = ""
+if token:
+    beacon = ('<script defer src="https://static.cloudflareinsights.com/beacon.min.js" '
+              "data-cf-beacon='" + json.dumps({"token": token}) + "'></script>\n")
+    i = page.rfind("</body>")
+    page = page[:i] + beacon + page[i:] if i != -1 else page + beacon
 try:
     old = open(out, encoding="utf-8").read()
 except FileNotFoundError:
