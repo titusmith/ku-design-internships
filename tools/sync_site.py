@@ -33,6 +33,40 @@ if token:
               "data-cf-beacon='" + json.dumps({"token": token}) + "'></script>\n")
     i = page.rfind("</body>")
     page = page[:i] + beacon + page[i:] if i != -1 else page + beacon
+
+# Click tracking (which postings students open), via GoatCounter. Public copy only.
+# Set {"goatcounter_code": "yourcode"} in tools/site_config.json; empty = off.
+try:
+    gc = json.load(open(cfg_path, encoding="utf-8")).get("goatcounter_code", "").strip()
+except (FileNotFoundError, ValueError):
+    gc = ""
+if re.fullmatch(r"[a-z0-9-]+", gc or ""):
+    clicks = (
+        '<script data-goatcounter="https://' + gc + '.goatcounter.com/count" '
+        "data-goatcounter-settings='{\"no_onload\": true}' async src=\"https://gc.zgo.at/count.js\"></script>\n"
+        "<script>\n"
+        "(function () {\n"
+        "  var byLink = null;\n"
+        "  function lookup() {\n"
+        "    if (byLink) return byLink; byLink = {};\n"
+        "    try { JSON.parse(document.getElementById('board-data').textContent).listings.forEach(function (l) {\n"
+        "      if (l.link_url) byLink[l.link_url] = l; if (l.apply_email) byLink['mailto:' + l.apply_email] = l; }); } catch (e) {}\n"
+        "    return byLink;\n"
+        "  }\n"
+        "  document.addEventListener('click', function (e) {\n"
+        "    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null; if (!a) return;\n"
+        "    var href = a.getAttribute('href') || '';\n"
+        "    if (!/^(https?:|mailto:)/i.test(href) || /goatcounter|cloudflareinsights/.test(href)) return;\n"
+        "    var l = lookup()[href] || lookup()[href.split('?')[0]];\n"
+        "    if (!l) return;\n"
+        "    var kind = /^mailto:/i.test(href) ? 'email' : 'posting';\n"
+        "    try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({\n"
+        "      path: kind + '/' + l.id, title: l.company + ': ' + l.role_title + (kind === 'email' ? ' (email)' : ''), event: true }); } catch (e) {}\n"
+        "  }, true);\n"
+        "})();\n"
+        "</script>\n")
+    i = page.rfind("</body>")
+    page = page[:i] + clicks + page[i:] if i != -1 else page + clicks
 try:
     old = open(out, encoding="utf-8").read()
 except FileNotFoundError:
