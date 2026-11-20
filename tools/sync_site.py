@@ -28,7 +28,7 @@ try:
     token = json.load(open(cfg_path, encoding="utf-8")).get("cloudflare_token", "").strip()
 except (FileNotFoundError, ValueError):
     token = ""
-if token:
+if token and "cloudflareinsights" not in page:
     beacon = ('<script defer src="https://static.cloudflareinsights.com/beacon.min.js" '
               "data-cf-beacon='" + json.dumps({"token": token}) + "'></script>\n")
     i = page.rfind("</body>")
@@ -40,7 +40,7 @@ try:
     gc = json.load(open(cfg_path, encoding="utf-8")).get("goatcounter_code", "").strip()
 except (FileNotFoundError, ValueError):
     gc = ""
-if re.fullmatch(r"[a-z0-9-]+", gc or ""):
+if re.fullmatch(r"[a-z0-9-]+", gc or "") and "goatcounter.com/count" not in page:
     clicks = (
         '<script data-goatcounter="https://' + gc + '.goatcounter.com/count" '
         "data-goatcounter-settings='{\"no_onload\": true}' async src=\"https://gc.zgo.at/count.js\"></script>\n"
