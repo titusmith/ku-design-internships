@@ -89,3 +89,11 @@ One entry per run, newest at the bottom.
 ## 2026-11-19 (Titus's link)
 - Board had 127 listings; all of the Nov 16 suggestions and proposals had been approved.
 - Added RGD Branding Awards 2027 to Suggested: Student division; tiers Dec 14, 2026 (CA$60) / Jan 15, 2027 (CA$75) / Jan 29, 2027 (CA$90) for Student RGD members; non-member students pay CA$95–150; +13% tax. Open questions: whether non-Canadian students can enter, and who owns entries (FAQ not read).
+
+## 2026-11-23 (scheduled run)
+- Board loaded: 128 listings, nothing pending in Suggested. Published version 126 with this run's changes.
+- Dates: checked 25 listings (estimated, blank and just-passed). 3 proposals: Infected By Art Vol. 15 confirmed (Dec 8, 2026), KCAC Undergraduate Juried Exhibition confirmed (Feb 1–28, 2027; page also still says "to be updated with 2026 dates"), IDEA 2027 student category (regular Feb 22 / late Mar 12, 2027; portal also mentions Mar 22; 2027 fees not posted).
+- No new dates yet for: NSS 2027 entry deadlines, SoI 2027, GDUSA Digital, AI46, FigBuild 2027, AIGA KC Portfolio Day 2027, SEGD 2027, SIGGRAPH 2027 CAF, SPD-U 2027, Core77 2027, 3x3 No. 24, HCII student comp deadline, LibArt 2027, GDUSA AGDA next cycle, Adobe MAX 2027, Webby final date, PRINT 2027, SND48, GLITCH deadline, Portfolio Night 2027, Stellic 2027.
+- New suggestions (5): KCAC Sketchbook Project 2027 (sign up Apr 17 / return Jun 17, 2027), AIGA NWA Under Review portfolio review (~Apr 17, 2027 est.), Animex Screen student film festival (~Aug 27, 2027 est.), GLAS Undergraduate Shorts (dates TBA), SND Challenge (deadline TBA).
+- Rejected 28 (mostly KC professional/fine-art calls, aggregator-only or pay-to-enter awards, campus-only challenges, Canada-only RGD student awards); 1 stale (OPE! Midwest portfolio review, undated page). No company-backed challenge passed this run.
+- Problems: WebFetch permission prompts timed out for midwesterngdb.com, creativemornings.com/cities/kc, societyillustrators.org/student-scholarship, nationalstudentshow.com rules page, contestwatchers.com, hiiibrand.com, immersive-design-challenge.com and devpost.com, so those couldn't be checked. add_repo tool not available (repo already cloned). No Gmail connector.
